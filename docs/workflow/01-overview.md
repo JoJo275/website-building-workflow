@@ -31,3 +31,21 @@ Goal
 8. Compare output against the design.
 9. Fix spacing, states, responsiveness, and accessibility.
 10. Deploy.
+
+## Professional Workflow
+
+A full team workflow adds review, design, and QA gates at each stage:
+
+1. Product brief
+2. User flows
+3. Sitemap
+4. Wireframes
+5. Visual design
+6. Prototype
+7. Design review
+8. Frontend build
+9. Backend build
+10. Content pass
+11. QA pass
+12. Launch
+13. Measure and iterate

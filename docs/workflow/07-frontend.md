@@ -41,6 +41,33 @@ DashboardMetric
 6. Responsive adjustments
 7. Accessibility pass
 
+## Content and Copy
+
+Copy is often underestimated in frontend work. The words on every element matter.
+
+Content includes:
+
+- Page headings and subheadings
+- Button labels
+- Empty-state messages
+- Error messages
+- Onboarding text
+- Tooltip descriptions
+- Form labels and help text
+
+Bad button label:
+
+> Submit
+
+Better, depending on context:
+
+- Send feedback
+- Create project
+- Invite teammate
+- Mark as resolved
+
+Write copy before or alongside implementation, not as an afterthought.
+
 ## Checklist
 
 - [ ] Layout matches the design at all breakpoints

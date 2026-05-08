@@ -58,6 +58,23 @@ Design for mobile first. Define breakpoints and verify layouts at:
 - 768px (tablet)
 - 1280px (desktop)
 
+## Prototype
+
+After the visual design is stable, create a prototype to test screen connections before writing code.
+
+A prototype shows what happens when users interact:
+
+```text
+Click "Sign up"        → signup page
+Click "View feedback"  → feedback detail panel opens
+Click "Filter"         → dropdown opens
+Click "Mark resolved"  → status changes
+```
+
+The prototype does not need real backend logic. It tests whether the flow makes sense.
+
+Prototypes are typically built in Figma using interactive connections between frames.
+
 ## Output
 
 Figma file in `design-source/`. Exported assets in `design-source/exports/`.

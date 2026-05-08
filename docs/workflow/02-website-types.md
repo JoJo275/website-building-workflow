@@ -9,6 +9,20 @@
 | E-commerce | Catalog → checkout → payments → inventory/orders |
 | Dashboard app | Data model → user tasks → components → API integration → states |
 
+## Goals by Type
+
+**Marketing site:** Get visitors to understand the product and sign up.
+
+**Portfolio:** Show credibility and examples of work.
+
+**SaaS app:** Let users sign up, log in, and complete workflows.
+
+**E-commerce:** Help users browse, compare, buy, and manage orders.
+
+**Blog/content site:** Publish searchable, readable articles.
+
+The goal determines everything else — structure, features, and hosting.
+
 ## Static vs Dynamic Sites
 
 **Static sites** serve pre-built HTML files with no server-side processing per request.

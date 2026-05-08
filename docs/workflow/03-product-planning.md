@@ -38,3 +38,18 @@ Users need to:
 
 A short product brief that can be handed to a designer or developer.
 Use the [Product Brief template](../templates/product-brief.md).
+
+## Research and References
+
+Before designing, gather:
+
+- Competitor websites
+- Design references
+- Target audience notes
+- Product requirements
+- Brand examples
+- Content examples
+
+For a SaaS dashboard, you might study Linear, Stripe, PostHog, Vercel, Plain, and Intercom.
+
+This is not for copying. It is for understanding patterns your users already recognise.

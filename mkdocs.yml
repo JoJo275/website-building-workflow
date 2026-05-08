@@ -80,3 +80,10 @@ nav:
       - PR Review: templates/pr-review.md
       - Debugging Template: templates/debugging-template.md
       - Feature Spec: templates/feature-spec.md
+  - Tools:
+      - Overview: tools/index.md
+      - Design Tools: tools/design.md
+      - Frontend: tools/frontend.md
+      - Backend & Database: tools/backend.md
+      - Dev Environment: tools/dev-environment.md
+      - Third-Party Services: tools/third-party.md
