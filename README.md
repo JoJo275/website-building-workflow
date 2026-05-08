@@ -9,13 +9,14 @@ Published at: <https://jojo275.github.io/website-building-workflow/>
 ## Commands
 
 ```bash
-uv sync                          # install dependencies
-uv run pre-commit install        # install git hooks (once after clone)
-uv run mkdocs serve              # local dev server → http://127.0.0.1:8000
-uv run mkdocs build --strict     # build (mirrors CI)
-uv run pre-commit run --all-files  # run all lint checks
+task setup    # install dependencies + git hooks (once after clone)
+task serve    # local dev server → http://127.0.0.1:8000
+task build    # build site (mirrors CI)
+task lint     # run all lint checks
+task upgrade  # upgrade dependencies
 ```
 
+Run `task` with no arguments to list all available tasks.
 See [project/v1/commands.md](project/v1/commands.md) for the full reference.
 
 ## Structure

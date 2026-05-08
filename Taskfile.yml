@@ -1,0 +1,44 @@
+version: "3"
+
+tasks:
+  default:
+    desc: List all available tasks
+    cmds:
+      - task --list
+
+  setup:
+    desc: Install dependencies and git hooks
+    cmds:
+      - uv sync
+      - uv run pre-commit install
+
+  serve:
+    desc: Start local dev server (http://127.0.0.1:8000)
+    cmds:
+      - uv run mkdocs serve
+
+  build:
+    desc: Build the site locally (outputs to site/)
+    cmds:
+      - uv run mkdocs build --strict
+
+  lint:
+    desc: Run all pre-commit hooks against every file
+    cmds:
+      - uv run pre-commit run --all-files
+
+  lint:md:
+    desc: Run markdownlint only
+    cmds:
+      - uv run pre-commit run markdownlint --all-files
+
+  lint:yaml:
+    desc: Run check-yaml only
+    cmds:
+      - uv run pre-commit run check-yaml --all-files
+
+  upgrade:
+    desc: Upgrade all dependencies to latest compatible versions
+    cmds:
+      - uv lock --upgrade
+      - uv sync

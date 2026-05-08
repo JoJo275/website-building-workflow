@@ -2,6 +2,25 @@
 
 Reference for all commands used in day-to-day work on this repo.
 
+This repo uses [Task](https://taskfile.dev) as a task runner (`Taskfile.yml` in root).
+All tasks wrap `uv` commands — you can always run the underlying `uv` command directly
+if preferred.
+
+---
+
+## Task Runner Quick Reference
+
+```bash
+task           # list all tasks
+task setup     # install deps + git hooks
+task serve     # local dev server
+task build     # build site (strict mode)
+task lint      # run all pre-commit hooks
+task lint:md   # markdownlint only
+task lint:yaml # check-yaml only
+task upgrade   # upgrade all dependencies
+```
+
 ---
 
 ## Setup
@@ -9,13 +28,15 @@ Reference for all commands used in day-to-day work on this repo.
 Install dependencies and activate the virtual environment:
 
 ```bash
-uv sync
+task setup
+# or: uv sync
 ```
 
 Install git hooks (run once after cloning):
 
 ```bash
-uv run pre-commit install
+task setup
+# or: uv run pre-commit install
 ```
 
 ---
@@ -25,7 +46,8 @@ uv run pre-commit install
 Start the MkDocs dev server with live reload:
 
 ```bash
-uv run mkdocs serve
+task serve
+# or: uv run mkdocs serve
 ```
 
 Preview at <http://127.0.0.1:8000/website-building-workflow/>
@@ -33,13 +55,8 @@ Preview at <http://127.0.0.1:8000/website-building-workflow/>
 Build the site locally (outputs to `site/`):
 
 ```bash
-uv run mkdocs build
-```
-
-Build with strict mode (fails on warnings — same as CI):
-
-```bash
-uv run mkdocs build --strict
+task build
+# or: uv run mkdocs build --strict
 ```
 
 ---
@@ -49,20 +66,29 @@ uv run mkdocs build --strict
 Run all pre-commit hooks against every file:
 
 ```bash
-uv run pre-commit run --all-files
+task lint
+# or: uv run pre-commit run --all-files
 ```
 
-Run a single hook by ID:
+Run a single hook:
 
 ```bash
-uv run pre-commit run markdownlint --all-files
-uv run pre-commit run check-yaml --all-files
-uv run pre-commit run trailing-whitespace --all-files
+task lint:md
+task lint:yaml
+# or: uv run pre-commit run markdownlint --all-files
+# or: uv run pre-commit run check-yaml --all-files
 ```
 
 ---
 
 ## Dependency Management
+
+Upgrade all dependencies to latest compatible versions:
+
+```bash
+task upgrade
+# or: uv lock --upgrade && uv sync
+```
 
 Add a runtime dependency:
 
@@ -74,13 +100,6 @@ Add a dev dependency:
 
 ```bash
 uv add --dev <package>
-```
-
-Update all dependencies to latest compatible versions:
-
-```bash
-uv lock --upgrade
-uv sync
 ```
 
 ---
