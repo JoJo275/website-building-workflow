@@ -17,7 +17,7 @@ This repository documents a repeatable workflow for building and deploying websi
 
 ## Repo Structure
 
-```
+```text
 website-building-workflow/
 ├── docs/                   # MkDocs source — published to GitHub Pages
 │   ├── index.md            # Home page

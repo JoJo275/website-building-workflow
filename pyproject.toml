@@ -1,0 +1,9 @@
+[project]
+name = "website-building-workflow"
+version = "0.1.0"
+description = "A repeatable workflow for building and deploying websites."
+requires-python = ">=3.12"
+dependencies = ["mkdocs>=1.6.0", "mkdocs-material>=9.5.0"]
+
+[dependency-groups]
+dev = ["pre-commit>=4.0.0"]

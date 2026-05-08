@@ -25,6 +25,7 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - search.highlight
@@ -52,9 +53,30 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Workflow:
-      - Overview: workflow/overview.md
-      - Planning: workflow/planning.md
-      - Development: workflow/development.md
-      - Deployment: workflow/deployment.md
-  - Reference:
-      - Checklists: reference/checklists.md
+      - Overview: workflow/01-overview.md
+      - Website Types: workflow/02-website-types.md
+      - Product Planning: workflow/03-product-planning.md
+      - Information Architecture: workflow/04-information-architecture.md
+      - Wireframes: workflow/05-wireframes.md
+      - Visual Design: workflow/06-visual-design.md
+      - Frontend: workflow/07-frontend.md
+      - Backend: workflow/08-backend.md
+      - Database: workflow/09-database.md
+      - Testing: workflow/10-testing.md
+      - Deployment: workflow/11-deployment.md
+      - AI Workflows: workflow/12-ai-workflows.md
+  - Checklists:
+      - Launch Checklist: checklists/launch-checklist.md
+      - UI QA Checklist: checklists/ui-qa-checklist.md
+      - Accessibility Checklist: checklists/accessibility-checklist.md
+      - Responsive Checklist: checklists/responsive-checklist.md
+      - Copilot Implementation Checklist: checklists/copilot-implementation-checklist.md
+  - Templates:
+      - Product Brief: templates/product-brief.md
+      - Route Map: templates/route-map.md
+      - Screen Spec: templates/screen-spec.md
+      - Component Spec: templates/component-spec.md
+      - AI Task Brief: templates/ai-task-brief.md
+      - PR Review: templates/pr-review.md
+      - Debugging Template: templates/debugging-template.md
+      - Feature Spec: templates/feature-spec.md

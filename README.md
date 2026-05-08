@@ -4,18 +4,18 @@ A repeatable workflow for building and deploying websites, published as a docs s
 
 ## Docs site
 
-Published at: https://jojo275.github.io/website-building-workflow/
+Published at: <https://jojo275.github.io/website-building-workflow/>
 
 ## Local development
 
 ```bash
-pip install -r requirements.txt
-mkdocs serve
+uv sync
+uv run mkdocs serve
 ```
 
 ## Structure
 
-```
+```text
 docs/        # MkDocs source — published content
 project/     # Internal design/planning docs (not published)
 .github/     # GitHub Actions deploy workflow
@@ -24,6 +24,5 @@ project/     # Internal design/planning docs (not published)
 ## Pre-commit
 
 ```bash
-pip install pre-commit
-pre-commit install
+uv run pre-commit install
 ```
