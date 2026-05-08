@@ -6,23 +6,23 @@ A repeatable workflow for building and deploying websites, published as a docs s
 
 Published at: <https://jojo275.github.io/website-building-workflow/>
 
-## Local development
+## Commands
 
 ```bash
-uv sync
-uv run mkdocs serve
+uv sync                          # install dependencies
+uv run pre-commit install        # install git hooks (once after clone)
+uv run mkdocs serve              # local dev server → http://127.0.0.1:8000
+uv run mkdocs build --strict     # build (mirrors CI)
+uv run pre-commit run --all-files  # run all lint checks
 ```
+
+See [project/v1/commands.md](project/v1/commands.md) for the full reference.
 
 ## Structure
 
 ```text
-docs/        # MkDocs source — published content
-project/     # Internal design/planning docs (not published)
-.github/     # GitHub Actions deploy workflow
-```
-
-## Pre-commit
-
-```bash
-uv run pre-commit install
+docs/           # MkDocs source — published content
+design-source/  # Raw design files (not published)
+project/        # Internal planning docs (not published)
+.github/        # GitHub Actions deploy workflow
 ```
