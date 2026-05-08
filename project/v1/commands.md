@@ -47,10 +47,13 @@ Start the MkDocs dev server with live reload:
 
 ```bash
 task serve
-# or: uv run mkdocs serve
+# or: uv run mkdocs serve -f mkdocs.local.yml
 ```
 
-Preview at <http://127.0.0.1:8000/website-building-workflow/>
+Preview at <http://127.0.0.1:8001/>
+
+`mkdocs.local.yml` inherits from `mkdocs.yml` and sets `site_url: ""` so the
+server does not redirect to the GitHub Pages subpath.
 
 Build the site locally (outputs to `site/`):
 

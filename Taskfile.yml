@@ -13,9 +13,9 @@ tasks:
       - uv run pre-commit install
 
   serve:
-    desc: Start local dev server (http://127.0.0.1:8000)
+    desc: Start local dev server (http://127.0.0.1:8001)
     cmds:
-      - uv run mkdocs serve
+      - uv run mkdocs serve -f mkdocs.local.yml
 
   build:
     desc: Build the site locally (outputs to site/)

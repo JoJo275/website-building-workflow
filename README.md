@@ -10,7 +10,7 @@ Published at: <https://jojo275.github.io/website-building-workflow/>
 
 ```bash
 task setup    # install dependencies + git hooks (once after clone)
-task serve    # local dev server → http://127.0.0.1:8000
+task serve    # local dev server → http://127.0.0.1:8001
 task build    # build site (mirrors CI)
 task lint     # run all lint checks
 task upgrade  # upgrade dependencies
