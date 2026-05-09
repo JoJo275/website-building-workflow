@@ -4,6 +4,8 @@ Covers hosting, CI/CD pipelines, domains, and monitoring.
 
 ## Static Site Hosting
 
+Frontend only. No server required. The build output is a folder of HTML, CSS, and JS files.
+
 ```text
 GitHub Pages
 Netlify
@@ -11,7 +13,17 @@ Vercel
 Cloudflare Pages
 ```
 
+Good for:
+
+- Portfolio sites
+- Landing pages
+- Documentation
+- Blogs
+- Simple marketing sites
+
 ## Dynamic App Hosting
+
+Frontend + backend + database. Requires a server or runtime to handle requests.
 
 ```text
 Railway
@@ -20,6 +32,17 @@ Fly.io
 Vercel serverless
 AWS / GCP / Azure
 ```
+
+Good for:
+
+- SaaS apps
+- Dashboards
+- Auth and accounts
+- Payments
+- User-generated data
+- Admin panels
+
+If your app has user accounts, a database, or server-side logic, it is dynamic.
 
 ## Common Tools
 

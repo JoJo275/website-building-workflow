@@ -266,11 +266,16 @@ Copy is often underestimated in frontend work. The words on every element matter
 
 Content includes:
 
+- Homepage copy
 - Page headings and subheadings
 - Button labels
 - Empty-state messages
 - Error messages
 - Onboarding text
+- Documentation
+- Pricing descriptions
+- Emails
+- Legal pages
 - Tooltip descriptions
 - Form labels and help text
 

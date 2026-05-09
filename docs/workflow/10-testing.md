@@ -2,6 +2,21 @@
 
 Testing verifies the site or app works correctly across devices, browsers, and edge cases.
 
+Before launch, check:
+
+- Does it work?
+- Does it work on mobile?
+- Does it work in Chrome, Firefox, and Safari?
+- Are errors handled?
+- Are loading states handled?
+- Is it accessible with keyboard only?
+- Are forms validated?
+- Is it fast enough?
+- Does auth work correctly?
+- Are permissions correct?
+
+For a solo developer, you do not need enterprise-level QA at first, but you do need a checklist.
+
 ## Testing Types
 
 | Type | What it covers |
