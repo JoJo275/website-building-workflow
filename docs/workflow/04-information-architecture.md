@@ -39,4 +39,4 @@ Defines how content and pages are organised before any visual design begins.
 ## Output
 
 A route map document.
-Use the [Route Map template](../templates/route-map.md).
+Use the [Route Map template](../starters/route-map.md).

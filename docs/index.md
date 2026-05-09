@@ -27,11 +27,11 @@ A practical guide for planning, designing, building, testing, deploying, and ite
 
 ## Templates
 
-- [Product Brief](templates/product-brief.md)
-- [Route Map](templates/route-map.md)
-- [Screen Spec](templates/screen-spec.md)
-- [Component Spec](templates/component-spec.md)
-- [AI Task Brief](templates/ai-task-brief.md)
-- [PR Review](templates/pr-review.md)
-- [Debugging Template](templates/debugging-template.md)
-- [Feature Spec](templates/feature-spec.md)
+- [Product Brief](starters/product-brief.md)
+- [Route Map](starters/route-map.md)
+- [Screen Spec](starters/screen-spec.md)
+- [Component Spec](starters/component-spec.md)
+- [AI Task Brief](starters/ai-task-brief.md)
+- [PR Review](starters/pr-review.md)
+- [Debugging Template](starters/debugging-template.md)
+- [Feature Spec](starters/feature-spec.md)

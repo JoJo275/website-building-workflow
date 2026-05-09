@@ -35,4 +35,4 @@ What must always be visible?
 ## Output
 
 Wireframe images exported to `design-source/exports/`.
-Reference them in screen specs using the [Screen Spec template](../templates/screen-spec.md).
+Reference them in screen specs using the [Screen Spec template](../starters/screen-spec.md).

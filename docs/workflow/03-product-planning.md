@@ -37,7 +37,7 @@ Users need to:
 ## Output
 
 A short product brief that can be handed to a designer or developer.
-Use the [Product Brief template](../templates/product-brief.md).
+Use the [Product Brief template](../starters/product-brief.md).
 
 ## Research and References
 
