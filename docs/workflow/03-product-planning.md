@@ -69,7 +69,7 @@ Users need to:
 - Not writing down what the site should NOT do
 - Designing for the ideal case only (ignoring empty/error states)
 
-## Tools
+## Common Tools
 
 - **Any text editor or Notion** — write the product brief in plain text first; clarity matters more than format
 - **FigJam** — sketch user flows and early page lists as a visual diagram before writing them down

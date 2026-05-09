@@ -287,7 +287,7 @@ Better, depending on context:
 
 Write copy before or alongside implementation, not as an afterthought.
 
-## Tools
+## Common Tools
 
 - **React + Next.js** — the most common choice for component-based apps with routing and server rendering
 - **Astro** — good for content-heavy or mostly-static sites with minimal JavaScript

@@ -2,6 +2,8 @@
 
 A repeatable workflow for building and deploying websites, published as a docs site via MkDocs Material on GitHub Pages.
 
+The site is intentionally information-dense — each page covers a full topic with worked examples, reference tables, and code snippets, rather than light overviews. Browse the workflow pages in order for a first read; use the search or nav for reference afterwards.
+
 ## Docs site
 
 Published at: <https://jojo275.github.io/website-building-workflow/>

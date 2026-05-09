@@ -21,7 +21,7 @@ Vercel serverless
 AWS / GCP / Azure
 ```
 
-## Tools
+## Common Tools
 
 - **GitHub Actions** — the standard CI/CD pipeline for GitHub repos; runs tests, lint, and deploys on push
 - **Vercel or Netlify** — simplest deployment for Next.js and static sites; auto-deploys from the main branch

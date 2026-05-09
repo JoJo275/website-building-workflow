@@ -27,7 +27,7 @@ Are forms validated with useful error messages?
 Are permissions enforced correctly?
 ```
 
-## Tools
+## Common Tools
 
 - **Playwright** — end-to-end browser testing; runs real user flows in a real browser
 - **Vitest or Jest** — unit and component testing for JavaScript and TypeScript

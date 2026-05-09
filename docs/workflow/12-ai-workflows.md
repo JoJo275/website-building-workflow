@@ -114,7 +114,7 @@ Define user tasks
 → test against the intended behaviour
 ```
 
-## Tools
+## Common Tools
 
 - **GitHub Copilot** — inline completions and agent mode inside VS Code; good for focused, single-file edits
 - **Cursor** — VS Code fork with deeper AI integration; supports multi-file context and codebase-wide edits

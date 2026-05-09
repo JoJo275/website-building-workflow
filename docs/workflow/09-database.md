@@ -34,10 +34,18 @@ audit_logs
 - Never point development at production
 - Use environment variables for all connection strings
 
-## Tools
+## Common Tools
 
-- **PostgreSQL** — the default choice for relational data in production; reliable and well-supported
-- **SQLite** — good for local development or lightweight apps that don't need a separate server
+### Databases
+
+- **PostgreSQL** — the default choice for relational data; reliable, well-supported, and production-ready
+- **MySQL** — widely used relational database; large hosting ecosystem; good for read-heavy workloads
+- **SQLite** — file-based; no server required; ideal for local development, embedded apps, or small tools
+- **MongoDB** — document database; stores JSON-like records; suits unstructured or highly variable data
+- **Redis** — in-memory key/value store; used for caching, sessions, rate limiting, and queues
+
+### ORMs and clients
+
 - **Prisma or Drizzle** — type-safe ORMs for Node.js; handle migrations, queries, and schema definition
 - **Supabase** — managed PostgreSQL with auth, real-time, and file storage built in
 - **TablePlus or DB Browser** — GUI clients for inspecting and querying your database locally

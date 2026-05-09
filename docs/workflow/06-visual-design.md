@@ -12,26 +12,25 @@ Before opening Figma, define what the site should feel like. This is the design 
 
 Choose three to five adjectives that describe how the site should feel.
 
-```text
-Examples:
-Clean, trustworthy, and calm        → fintech, healthcare, productivity tools
-Bold, energetic, and playful        → consumer apps, games, youth brands
-Minimal, precise, and technical     → developer tools, APIs, CLIs
-Warm, approachable, and friendly    → community platforms, onboarding-heavy apps
-Premium, refined, and confident     → agencies, luxury brands, editorial sites
-```
+| Tone | Typical use cases |
+|---|---|
+| Clean, trustworthy, and calm | Fintech, healthcare, productivity tools |
+| Bold, energetic, and playful | Consumer apps, games, youth brands |
+| Minimal, precise, and technical | Developer tools, APIs, CLIs |
+| Warm, approachable, and friendly | Community platforms, onboarding-heavy apps |
+| Premium, refined, and confident | Agencies, luxury brands, editorial sites |
 
 #### What the site must accommodate
 
 Who uses it, where, and how. This defines constraints before any pixels are drawn.
 
-```text
-- Who: developers, non-technical managers, or general consumers?
-- Where: desktop-first or mobile-first? Low-bandwidth environments?
-- How: quick one-time tasks, or long sessions with complex workflows?
-- Accessibility: does it need to meet WCAG AA? Screen reader support?
-- Internationalisation: right-to-left scripts, variable text lengths?
-```
+| Dimension | Questions to answer |
+|---|---|
+| Who | Developers, non-technical managers, or general consumers? |
+| Where | Desktop-first or mobile-first? Low-bandwidth environments? |
+| How | Quick one-time tasks, or long sessions with complex workflows? |
+| Accessibility | Does it need to meet WCAG AA? Screen reader support? |
+| Internationalisation | Right-to-left scripts, variable text lengths? |
 
 #### Visual direction
 
@@ -49,14 +48,14 @@ How the personality translates into tangible design decisions.
 
 Decisions that rule things in or out early.
 
-```text
-Shape language: rounded (large radius) or sharp (0–2px radius)?
-Density: spacious (lots of breathing room) or compact (more content per screen)?
-Colour temperature: warm, cool, or neutral base?
-Type scale: one typeface or two? Serif or sans-serif for body?
-Motion: static or animated transitions? Subtle or expressive?
-Iconography: filled, outlined, or duotone?
-```
+| Constraint | Decision to make |
+|---|---|
+| Shape language | Rounded (large radius) or sharp (0–2px radius)? |
+| Density | Spacious (lots of breathing room) or compact (more content per screen)? |
+| Colour temperature | Warm, cool, or neutral base? |
+| Type scale | One typeface or two? Serif or sans-serif for body? |
+| Motion | Static or animated transitions? Subtle or expressive? |
+| Iconography | Filled, outlined, or duotone? |
 
 ### Example design language brief
 
@@ -116,16 +115,16 @@ Test all colour combinations for WCAG AA contrast (4.5:1 for body text, 3:1 for 
 
 Use a consistent multiplier-based scale. A 4px base is the most common.
 
-```text
-xs   —  4px
-sm   —  8px
-md   — 16px
-lg   — 24px
-xl   — 32px
-2xl  — 48px
-3xl  — 64px
-4xl  — 96px
-```
+| Token | Size |
+|---|---|
+| `xs` | 4px |
+| `sm` | 8px |
+| `md` | 16px |
+| `lg` | 24px |
+| `xl` | 32px |
+| `2xl` | 48px |
+| `3xl` | 64px |
+| `4xl` | 96px |
 
 Apply these values to: margin, padding, gap, and layout gutters. Never use arbitrary values like `13px` or `22px` — they break visual rhythm.
 
@@ -141,12 +140,12 @@ Apply these values to: margin, padding, gap, and layout gutters. Never use arbit
 
 Define a small named set. More than four levels is usually unnecessary.
 
-```text
-none   — no shadow (flat surfaces)
-sm     — subtle lift (cards, dropdowns on light backgrounds)
-md     — moderate lift (modals, popovers)
-lg     — strong lift (dialogs, full overlays)
-```
+| Level | Use |
+|---|---|
+| `none` | Flat surfaces |
+| `sm` | Subtle lift — cards, dropdowns on light backgrounds |
+| `md` | Moderate lift — modals, popovers |
+| `lg` | Strong lift — dialogs, full overlays |
 
 Shadows should follow your design language. Minimal/technical sites often use flat colour borders instead of shadows.
 
@@ -165,23 +164,21 @@ Respect `prefers-reduced-motion`. Wrap transitions in a media query if they are 
 
 Once tokens are defined, list every UI component the design needs. This becomes the build list.
 
-```text
-Buttons (primary, secondary, ghost, destructive)
-Inputs (text, password, select, textarea, checkbox, radio)
-Badges and status labels
-Cards
-Modal and drawer
-Dropdown menu
-Tooltip
-Navbar
-Sidebar
-Pagination
-Alert / toast
-Table
-Skeleton loader
-Empty state
-Avatar
-```
+- Buttons (primary, secondary, ghost, destructive)
+- Inputs (text, password, select, textarea, checkbox, radio)
+- Badges and status labels
+- Cards
+- Modal and drawer
+- Dropdown menu
+- Tooltip
+- Navbar
+- Sidebar
+- Pagination
+- Alert / toast
+- Table
+- Skeleton loader
+- Empty state
+- Avatar
 
 ## States to Design
 
@@ -198,11 +195,7 @@ Every interactive component needs all states designed before handoff:
 
 ## Recommended Principle
 
-```text
-Figma defines appearance.
-Markdown specs define behaviour.
-Code implements both.
-```
+> Figma defines appearance. Markdown specs define behaviour. Code implements both.
 
 ## Responsive Design
 
@@ -290,7 +283,7 @@ Once the prototype is reviewed and the flow is signed off:
 
 The prototype answers *where does this go*. The screen spec answers *what does it do*.
 
-## Tools
+## Common Tools
 
 - **Figma** — primary tool for visual design, component libraries, and design system documentation
 - **Coolors or Realtime Colors** — generate and test colour palettes quickly against real UI

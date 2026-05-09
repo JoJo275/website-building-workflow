@@ -87,7 +87,7 @@ What must always be visible?
 +----------------------+-------------------+
 ```
 
-## Tools
+## Common Tools
 
 - **Paper and pen** — fastest for early exploration; work out the layout before opening any software
 - **Figma** — recommended for digital wireframes; easy to share, annotate, and hand off to a developer
