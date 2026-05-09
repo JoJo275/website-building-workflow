@@ -7,15 +7,17 @@
 
 Review the diff for:
 
-- [x] Correctness bugs
-- [x] Edge cases not handled
-- [x] Security issues
-- [x] Unnecessary complexity
-- [x] Missing tests
-- [ ] Unclear naming
-- [x] Broken existing behaviour
-- [ ] Accessibility problems
-- [x] Performance regressions
+| Check | Status | Notes |
+|-------|--------|-------|
+| Correctness bugs | Done | |
+| Edge cases not handled | Done | |
+| Security issues | Done | |
+| Unnecessary complexity | Done | |
+| Missing tests | Done | |
+| Unclear naming | To do | |
+| Broken existing behaviour | Done | |
+| Accessibility problems | To do | |
+| Performance regressions | Done | |
 
 ## Issues Found
 

@@ -46,8 +46,10 @@ See [Backend & Database Tools](../tools/backend.md) for full details.
 
 ## Checklist
 
-- [ ] Schema matches what the application actually needs
-- [ ] Migrations are checked in to version control
-- [ ] Indexes added for common query patterns
-- [ ] Seed data available for local development
-- [ ] Backup strategy defined for production
+| Check | Status | Notes |
+|-------|--------|-------|
+| Schema matches what the application actually needs | To do | |
+| Migrations are checked in to version control | To do | |
+| Indexes added for common query patterns | To do | |
+| Seed data available for local development | To do | |
+| Backup strategy defined for production | To do | |

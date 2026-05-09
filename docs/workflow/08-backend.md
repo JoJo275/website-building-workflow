@@ -47,9 +47,11 @@ See [Backend & Database Tools](../tools/backend.md) for a full list of framework
 
 ## Checklist
 
-- [ ] All routes require appropriate auth
-- [ ] Input is validated before hitting the database
-- [ ] Passwords are hashed, never stored plain
-- [ ] Environment variables used for secrets
-- [ ] Error messages do not expose internals
-- [ ] API returns consistent error shapes
+| Check | Status | Notes |
+|-------|--------|-------|
+| All routes require appropriate auth | To do | |
+| Input is validated before hitting the database | To do | |
+| Passwords are hashed, never stored plain | To do | |
+| Environment variables used for secrets | To do | |
+| Error messages do not expose internals | To do | |
+| API returns consistent error shapes | To do | |

@@ -299,8 +299,10 @@ See [Frontend Tools](../tools/frontend.md) for a full breakdown of frameworks, C
 
 ## Checklist
 
-- [ ] Layout matches the design at all breakpoints
-- [ ] Components handle loading, empty, and error states
-- [ ] All interactive elements are keyboard accessible
-- [ ] No hardcoded values that belong in config or API responses
-- [ ] Lint and typecheck pass
+| Check | Status | Notes |
+|-------|--------|-------|
+| Layout matches the design at all breakpoints | To do | |
+| Components handle loading, empty, and error states | To do | |
+| All interactive elements are keyboard accessible | To do | |
+| No hardcoded values that belong in config or API responses | To do | |
+| Lint and typecheck pass | To do | |

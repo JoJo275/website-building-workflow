@@ -34,11 +34,13 @@ See [Third-Party Services](../tools/third-party.md) for a full list of monitorin
 
 ## Pre-Deployment Checklist
 
-- [ ] Environment variables configured in the hosting provider
-- [ ] Production database provisioned and migrated
-- [ ] Domain purchased and DNS configured
-- [ ] HTTPS enabled
-- [ ] Build succeeds locally with production config
+| Check | Status | Notes |
+|-------|--------|-------|
+| Environment variables configured in the hosting provider | To do | |
+| Production database provisioned and migrated | To do | |
+| Domain purchased and DNS configured | To do | |
+| HTTPS enabled | To do | |
+| Build succeeds locally with production config | To do | |
 
 ## CI/CD Pipeline
 
@@ -54,12 +56,14 @@ Push to main
 
 ## Post-Deployment
 
-- [ ] Live URLs load correctly
-- [ ] Auth flow works on production
-- [ ] Environment-specific config is correct (no dev URLs, test keys, etc.)
-- [ ] Error monitoring is active (e.g. Sentry)
-- [ ] Uptime monitoring configured
-- [ ] Sitemap submitted if public SEO matters
+| Check | Status | Notes |
+|-------|--------|-------|
+| Live URLs load correctly | To do | |
+| Auth flow works on production | To do | |
+| Environment-specific config is correct (no dev URLs, test keys, etc.) | To do | |
+| Error monitoring is active (e.g. Sentry) | To do | |
+| Uptime monitoring configured | To do | |
+| Sitemap submitted if public SEO matters | To do | |
 
 ## Rolling Back
 

@@ -30,11 +30,13 @@ A toggle button in the top-right of the header switches between light and dark m
 
 ## Acceptance Criteria
 
-- [ ] Toggle button is visible in the header on all screen sizes
-- [ ] Clicking the toggle switches the theme immediately without a page reload
-- [ ] Preference persists across page reloads via `localStorage`
-- [ ] Dark mode applies the correct colour tokens defined in `tokens.css`
-- [ ] No flash of incorrect theme on initial load
+| Criterion | Status | Notes |
+|-----------|--------|-------|
+| Toggle button is visible in the header on all screen sizes | To do | |
+| Clicking the toggle switches the theme immediately without a page reload | To do | |
+| Preference persists across page reloads via `localStorage` | To do | |
+| Dark mode applies the correct colour tokens defined in `tokens.css` | To do | |
+| No flash of incorrect theme on initial load | To do | |
 
 ## Validation
 

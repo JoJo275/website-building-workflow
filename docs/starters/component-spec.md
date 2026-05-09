@@ -38,9 +38,11 @@ Displays a circular avatar for a user. Shows the user's profile image if availab
 
 ## Acceptance Criteria
 
-- [ ] Profile image renders correctly when a valid `imageUrl` is supplied
-- [ ] Initials fallback renders when no `imageUrl` is provided
-- [ ] Broken image URLs fall back to initials without a visible error
-- [ ] All three size variants render at the correct dimensions
-- [ ] Interactive variant is keyboard focusable and has a visible focus ring
-- [ ] Component passes axe accessibility checks
+| Criterion | Status | Notes |
+|-----------|--------|-------|
+| Profile image renders correctly when a valid `imageUrl` is supplied | To do | |
+| Initials fallback renders when no `imageUrl` is provided | To do | |
+| Broken image URLs fall back to initials without a visible error | To do | |
+| All three size variants render at the correct dimensions | To do | |
+| Interactive variant is keyboard focusable and has a visible focus ring | To do | |
+| Component passes axe accessibility checks | To do | |

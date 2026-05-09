@@ -46,13 +46,15 @@ Users currently miss important project updates unless they check their email. Ad
 
 ## Acceptance Criteria
 
-- [ ] Bell icon shows a badge with the correct unread count
-- [ ] Badge disappears when all notifications are marked as read
-- [ ] Clicking a notification marks it as read and navigates to the correct page
-- [ ] "Mark all as read" clears all badges and updates all records
-- [ ] Notifications panel shows the 20 most recent notifications, newest first
-- [ ] Notification panel is keyboard navigable and accessible
-- [ ] Polling does not cause visible UI flicker
+| Criterion | Status | Notes |
+|-----------|--------|-------|
+| Bell icon shows a badge with the correct unread count | To do | |
+| Badge disappears when all notifications are marked as read | To do | |
+| Clicking a notification marks it as read and navigates to the correct page | To do | |
+| "Mark all as read" clears all badges and updates all records | To do | |
+| Notifications panel shows the 20 most recent notifications, newest first | To do | |
+| Notification panel is keyboard navigable and accessible | To do | |
+| Polling does not cause visible UI flicker | To do | |
 
 ## Open Questions
 

@@ -51,12 +51,14 @@ Displays all tasks for a project as cards grouped into status columns (To do, In
 
 ## Acceptance Criteria
 
-- [ ] All task cards render in the correct column based on their status
-- [ ] Dragging a card to a new column updates the task status via the API immediately
-- [ ] Filtering by assignee hides non-matching cards without removing columns
-- [ ] Clicking a card opens the detail drawer without navigating away
-- [ ] The board is usable on mobile with column swipe navigation
-- [ ] Empty state is shown per-column when no tasks match the current filter
+| Criterion | Status | Notes |
+|-----------|--------|-------|
+| All task cards render in the correct column based on their status | To do | |
+| Dragging a card to a new column updates the task status via the API immediately | To do | |
+| Filtering by assignee hides non-matching cards without removing columns | To do | |
+| Clicking a card opens the detail drawer without navigating away | To do | |
+| The board is usable on mobile with column swipe navigation | To do | |
+| Empty state is shown per-column when no tasks match the current filter | To do | |
 
 ## Implementation Constraints
 

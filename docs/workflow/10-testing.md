@@ -39,11 +39,13 @@ See [Dev Environment Tools](../tools/dev-environment.md) for testing and linting
 
 ## Checklist
 
-- [ ] Main user flow tested end-to-end
-- [ ] Mobile layout verified at 375px
-- [ ] Keyboard navigation works throughout
-- [ ] Empty states display correctly
-- [ ] Error states display correctly
-- [ ] Form validation gives clear feedback
-- [ ] Auth-protected routes reject unauthenticated users
-- [ ] Automated tests pass in CI
+| Check | Status | Notes |
+|-------|--------|-------|
+| Main user flow tested end-to-end | To do | |
+| Mobile layout verified at 375px | To do | |
+| Keyboard navigation works throughout | To do | |
+| Empty states display correctly | To do | |
+| Error states display correctly | To do | |
+| Form validation gives clear feedback | To do | |
+| Auth-protected routes reject unauthenticated users | To do | |
+| Automated tests pass in CI | To do | |
