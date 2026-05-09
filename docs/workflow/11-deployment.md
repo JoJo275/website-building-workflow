@@ -21,6 +21,17 @@ Vercel serverless
 AWS / GCP / Azure
 ```
 
+## Tools
+
+- **GitHub Actions** — the standard CI/CD pipeline for GitHub repos; runs tests, lint, and deploys on push
+- **Vercel or Netlify** — simplest deployment for Next.js and static sites; auto-deploys from the main branch
+- **Railway or Render** — managed hosting for full-stack apps and databases without cloud provider complexity
+- **Sentry** — error tracking in production; captures exceptions with full stack traces and context
+- **Better Uptime or UptimeRobot** — monitors that the site responds and alerts you on downtime
+- **Plausible or PostHog** — privacy-friendly analytics for tracking real visitor and usage data
+
+See [Third-Party Services](../tools/third-party.md) for a full list of monitoring and analytics tools.
+
 ## Pre-Deployment Checklist
 
 - [ ] Environment variables configured in the hosting provider

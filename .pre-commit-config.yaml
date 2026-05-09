@@ -15,3 +15,8 @@ repos:
     hooks:
       - id: markdownlint
         args: [--config, .markdownlint.json]
+
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v9.8.0
+    hooks:
+      - id: cspell

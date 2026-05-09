@@ -47,6 +47,14 @@ A hierarchy deeper than three levels (`/level-1/level-2/level-3`) becomes hard t
 
 Page names should reflect the user's task or goal, not the organisation's internal terminology. `/dashboard` is clearer than `/control-panel`. `/account` is clearer than `/user-profile-management`. `/sign-up` is clearer than `/registration`. If a page name only makes sense to someone who already works on the product, it needs to be renamed.
 
+## Tools
+
+- **FigJam or Excalidraw** — draw the sitemap and user flows visually before writing the route map
+- **Whimsical** — clean flowchart and sitemap diagrams as an alternative to FigJam
+- **Any text editor** — the route map itself is a plain markdown file; keep it in the repo
+
+See [Design Tools](../tools/design.md) for full details.
+
 ## Output
 
 A route map document.

@@ -35,6 +35,16 @@ GET    /auth/me
 - Apply least-privilege to database credentials
 - Rate-limit auth endpoints
 
+## Tools
+
+- **Next.js API routes or Hono** — lightweight option for apps already using a JavaScript frontend framework
+- **FastAPI** — fast, well-documented Python framework with automatic OpenAPI schema generation
+- **Express or Fastify** — minimal Node.js options for more control over structure and middleware
+- **Zod or Joi** — schema validation libraries; validate all request input at the boundary
+- **Postman or HTTPie** — test API routes manually and inspect responses during development
+
+See [Backend & Database Tools](../tools/backend.md) for a full list of frameworks and libraries.
+
 ## Checklist
 
 - [ ] All routes require appropriate auth

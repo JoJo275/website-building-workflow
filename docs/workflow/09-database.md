@@ -34,6 +34,16 @@ audit_logs
 - Never point development at production
 - Use environment variables for all connection strings
 
+## Tools
+
+- **PostgreSQL** — the default choice for relational data in production; reliable and well-supported
+- **SQLite** — good for local development or lightweight apps that don't need a separate server
+- **Prisma or Drizzle** — type-safe ORMs for Node.js; handle migrations, queries, and schema definition
+- **Supabase** — managed PostgreSQL with auth, real-time, and file storage built in
+- **TablePlus or DB Browser** — GUI clients for inspecting and querying your database locally
+
+See [Backend & Database Tools](../tools/backend.md) for full details.
+
 ## Checklist
 
 - [ ] Schema matches what the application actually needs

@@ -113,3 +113,13 @@ Define user tasks
 → implement in code
 → test against the intended behaviour
 ```
+
+## Tools
+
+- **GitHub Copilot** — inline completions and agent mode inside VS Code; good for focused, single-file edits
+- **Cursor** — VS Code fork with deeper AI integration; supports multi-file context and codebase-wide edits
+- **Claude or ChatGPT** — useful for planning, reviewing specs, and generating first drafts outside the editor
+- **`.github/copilot-instructions.md`** — define project-specific conventions the AI follows automatically
+- **Prompt files (`.prompt.md`)** — store repeatable task prompts in the repo for consistent AI-assisted work
+
+See [Dev Environment Tools](../tools/dev-environment.md) for editor and AI tool details.

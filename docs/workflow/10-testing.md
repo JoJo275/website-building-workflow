@@ -27,6 +27,16 @@ Are forms validated with useful error messages?
 Are permissions enforced correctly?
 ```
 
+## Tools
+
+- **Playwright** — end-to-end browser testing; runs real user flows in a real browser
+- **Vitest or Jest** — unit and component testing for JavaScript and TypeScript
+- **axe DevTools** — browser extension for automated accessibility checks against WCAG
+- **Chrome DevTools** — inspect layout, simulate mobile viewports, and audit network requests manually
+- **Lighthouse** — built into Chrome DevTools; audits performance, accessibility, and SEO in one pass
+
+See [Dev Environment Tools](../tools/dev-environment.md) for testing and linting tool details.
+
 ## Checklist
 
 - [ ] Main user flow tested end-to-end
