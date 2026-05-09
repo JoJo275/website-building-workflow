@@ -12,25 +12,23 @@ Before opening Figma, define what the site should feel like. This is the design 
 
 Choose three to five adjectives that describe how the site should feel.
 
-| Tone | Typical use cases |
-|---|---|
-| Clean, trustworthy, and calm | Fintech, healthcare, productivity tools |
-| Bold, energetic, and playful | Consumer apps, games, youth brands |
-| Minimal, precise, and technical | Developer tools, APIs, CLIs |
-| Warm, approachable, and friendly | Community platforms, onboarding-heavy apps |
-| Premium, refined, and confident | Agencies, luxury brands, editorial sites |
+```text
+Clean, trustworthy, and calm       → fintech, healthcare, productivity tools
+Bold, energetic, and playful       → consumer apps, games, youth brands
+Minimal, precise, and technical    → developer tools, APIs, CLIs
+Warm, approachable, and friendly   → community platforms, onboarding-heavy apps
+Premium, refined, and confident    → agencies, luxury brands, editorial sites
+```
 
 #### What the site must accommodate
 
 Who uses it, where, and how. This defines constraints before any pixels are drawn.
 
-| Dimension | Questions to answer |
-|---|---|
-| Who | Developers, non-technical managers, or general consumers? |
-| Where | Desktop-first or mobile-first? Low-bandwidth environments? |
-| How | Quick one-time tasks, or long sessions with complex workflows? |
-| Accessibility | Does it need to meet WCAG AA? Screen reader support? |
-| Internationalisation | Right-to-left scripts, variable text lengths? |
+- **Who:** developers, non-technical managers, or general consumers?
+- **Where:** desktop-first or mobile-first? Low-bandwidth environments?
+- **How:** quick one-time tasks, or long sessions with complex workflows?
+- **Accessibility:** does it need to meet WCAG AA? Screen reader support?
+- **Internationalisation:** right-to-left scripts, variable text lengths?
 
 #### Visual direction
 
@@ -60,22 +58,22 @@ Decisions that rule things in or out early.
 ### Example design language brief
 
 ```text
-Product: TaskFlow — project management for small software teams
+Product   → TaskFlow — project management for small software teams
 
-Tone: Clean, efficient, and calm. Professional without being corporate.
-      Should feel like a well-made tool, not a flashy consumer app.
+Tone      → Clean, efficient, and calm. Professional without being corporate.
+             Should feel like a well-made tool, not a flashy consumer app.
 
-Users: Developers and small team leads on desktop, mostly in long sessions.
-       Occasional mobile access for quick status checks.
+Users     → Developers and small team leads on desktop, mostly in long sessions.
+             Occasional mobile access for quick status checks.
 
-Shape language: Low border radius (4px). Sharp edges signal precision.
-Density: Moderate. More content-dense than a consumer app, but not cramped.
-Colour: Cool neutral base. Single blue accent. Red only for destructive actions.
-Type: One sans-serif (Inter). No serif. Strong weight contrast for hierarchy.
-Motion: Minimal. Transitions under 150ms. No decorative animation.
-Icons: Outlined. Lucide icon set.
+Shape     → Low border radius (4px). Sharp edges signal precision.
+Density   → Moderate. More content-dense than a consumer app, but not cramped.
+Colour    → Cool neutral base. Single blue accent. Red only for destructive actions.
+Type      → One sans-serif (Inter). No serif. Strong weight contrast for hierarchy.
+Motion    → Minimal. Transitions under 150ms. No decorative animation.
+Icons     → Outlined. Lucide icon set.
 
-This should feel like Linear or Vercel — not Trello or Notion.
+Feels like → Linear, Vercel — not Trello or Notion.
 ```
 
 Define this before the design system. Every token, spacing decision, and component style should be traceable back to it.
@@ -167,13 +165,16 @@ Once tokens are defined, list every UI component the design needs. This becomes 
 - Buttons (primary, secondary, ghost, destructive)
 - Inputs (text, password, select, textarea, checkbox, radio)
 - Badges and status labels
+
 - Cards
 - Modal and drawer
 - Dropdown menu
 - Tooltip
+
 - Navbar
 - Sidebar
 - Pagination
+
 - Alert / toast
 - Table
 - Skeleton loader
