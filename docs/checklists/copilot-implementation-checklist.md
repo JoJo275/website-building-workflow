@@ -2,25 +2,31 @@
 
 ## Before Asking AI to Edit Code
 
-- [ ] Task goal is clearly written in one or two sentences
-- [ ] Relevant files are listed
-- [ ] Constraints are listed (what not to change, what not to add)
-- [ ] Acceptance criteria are written
-- [ ] Design reference is linked if applicable
-- [ ] Existing APIs and data models are described
-- [ ] Non-goals are listed
+| Check | Status | Notes |
+|-------|--------|-------|
+| Task goal is clearly written in one or two sentences | To do | |
+| Relevant files are listed | To do | |
+| Constraints are listed (what not to change, what not to add) | To do | |
+| Acceptance criteria are written | To do | |
+| Design reference is linked if applicable | To do | |
+| Existing APIs and data models are described | To do | |
+| Non-goals are listed | To do | |
 
 ## During Implementation
 
-- [ ] Ask for a plan first — review it before code is written
-- [ ] Keep changes small and focused on one task
-- [ ] Avoid unrelated refactors in the same diff
-- [ ] Ask AI to list files it intends to edit before making changes
-- [ ] Run tests, lint, and typecheck after each change
+| Check | Status | Notes |
+|-------|--------|-------|
+| Ask for a plan first — review it before code is written | To do | |
+| Keep changes small and focused on one task | To do | |
+| Avoid unrelated refactors in the same diff | To do | |
+| Ask AI to list files it intends to edit before making changes | To do | |
+| Run tests, lint, and typecheck after each change | To do | |
 
 ## After Implementation
 
-- [ ] Review the diff manually line by line
-- [ ] Ask AI for a critical review of the output
-- [ ] Confirm all acceptance criteria are met
-- [ ] Commit with a clear, descriptive message
+| Check | Status | Notes |
+|-------|--------|-------|
+| Review the diff manually line by line | To do | |
+| Ask AI for a critical review of the output | To do | |
+| Confirm all acceptance criteria are met | To do | |
+| Commit with a clear, descriptive message | To do | |

@@ -2,27 +2,36 @@
 
 ## Goal
 
-What problem does this site or app solve?
+TaskFlow is a lightweight project management tool for small software teams. It helps teams track tasks, collaborate on work, and ship projects without the overhead of enterprise tools like Jira.
 
 ## Audience
 
-Who is it for?
+Small software teams of 2–15 people, typically indie studios, agency teams, and early-stage startups. Users are comfortable with tools like Linear and Notion. They value speed, clarity, and keyboard shortcuts over customisation.
 
 ## Primary User Tasks
 
-- Task 1
-- Task 2
-- Task 3
+- Create and assign tasks within a project
+- Track progress with a Kanban board or list view
+- Comment on tasks and mention teammates
+- Set due dates and view upcoming work in a timeline
+- Invite new members to a workspace
 
 ## Success Criteria
 
-How do we know this is successful?
+- A new user can create a project and add their first task within 2 minutes of signing up
+- Teams using TaskFlow report fewer missed deadlines after 30 days compared to their previous tool
+- 60% of new workspaces created have at least 2 members within 7 days of signup
+- Monthly active user retention reaches 40% by end of Q3
 
 ## Non-Goals
 
-What are we intentionally not building yet?
+- Time tracking or billable hours
+- Client-facing portals or guest access
+- Native mobile apps (responsive web only for v1)
+- Advanced reporting or analytics dashboards
+- Custom workflows or automations
 
 ## Risks and Unknowns
 
-- Risk 1
-- Risk 2
+- The Kanban and timeline views may need significant performance work once boards have 200+ tasks — needs a spike before building.
+- We do not yet know whether teams will pay for a per-seat or flat-rate pricing model — pricing page should be built to support either.

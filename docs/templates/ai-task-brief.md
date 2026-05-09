@@ -2,22 +2,23 @@
 
 ## Task
 
-Describe exactly what should be changed.
+Add a dark mode toggle button to the site header that persists the user's preference using `localStorage`.
 
 ## Context
 
 Relevant files:
 
-- `path/to/file.tsx`
-- `path/to/file.py`
+- `src/components/Header.tsx`
+- `src/styles/tokens.css`
+- `src/hooks/useTheme.ts`
 
 Current behaviour:
 
-Explain what currently happens.
+The site always renders in light mode. There is no mechanism for the user to switch themes.
 
 Desired behaviour:
 
-Explain what should happen instead.
+A toggle button in the top-right of the header switches between light and dark mode. The selected preference is saved to `localStorage` and restored on page load. Dark mode is applied by adding a `.dark` class to the `<html>` element.
 
 ## Constraints
 
@@ -25,17 +26,20 @@ Explain what should happen instead.
 - Reuse existing components where possible.
 - Do not introduce new dependencies without approval.
 - Preserve existing public behaviour unless explicitly changed.
+- Do not modify any existing CSS colour values — only add dark-mode overrides via the `.dark` class.
 
 ## Acceptance Criteria
 
-- [ ] Criterion 1
-- [ ] Criterion 2
-- [ ] Criterion 3
+- [ ] Toggle button is visible in the header on all screen sizes
+- [ ] Clicking the toggle switches the theme immediately without a page reload
+- [ ] Preference persists across page reloads via `localStorage`
+- [ ] Dark mode applies the correct colour tokens defined in `tokens.css`
+- [ ] No flash of incorrect theme on initial load
 
 ## Validation
 
 ```bash
 npm test
 npm run lint
-pytest
+npm run typecheck
 ```
