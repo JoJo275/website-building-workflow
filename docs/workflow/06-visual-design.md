@@ -58,22 +58,22 @@ Decisions that rule things in or out early.
 ### Example design language brief
 
 ```text
-Product   → TaskFlow — project management for small software teams
+Product      → TaskFlow — project management for small software teams
 
-Tone      → Clean, efficient, and calm. Professional without being corporate.
-             Should feel like a well-made tool, not a flashy consumer app.
+Tone         → Clean, efficient, and calm. Professional without being corporate.
+              Should feel like a well-made tool, not a flashy consumer app.
 
-Users     → Developers and small team leads on desktop, mostly in long sessions.
-             Occasional mobile access for quick status checks.
+Users        → Developers and small team leads on desktop, mostly in long sessions.
+              Occasional mobile access for quick status checks.
 
-Shape     → Low border radius (4px). Sharp edges signal precision.
-Density   → Moderate. More content-dense than a consumer app, but not cramped.
-Colour    → Cool neutral base. Single blue accent. Red only for destructive actions.
-Type      → One sans-serif (Inter). No serif. Strong weight contrast for hierarchy.
-Motion    → Minimal. Transitions under 150ms. No decorative animation.
-Icons     → Outlined. Lucide icon set.
+Shape        → Low border radius (4px). Sharp edges signal precision.
+Density      → Moderate. More content-dense than a consumer app, but not cramped.
+Colour       → Cool neutral base. Single blue accent. Red only for destructive actions.
+Type         → One sans-serif (Inter). No serif. Strong weight contrast for hierarchy.
+Motion       → Minimal. Transitions under 150ms. No decorative animation.
+Icons        → Outlined. Lucide icon set.
 
-Feels like → Linear, Vercel — not Trello or Notion.
+Feels like   → Linear, Vercel — not Trello or Notion.
 ```
 
 Define this before the design system. Every token, spacing decision, and component style should be traceable back to it.
