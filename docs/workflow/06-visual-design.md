@@ -160,7 +160,7 @@ Respect `prefers-reduced-motion`. Wrap transitions in a media query if they are 
 
 ### Component Inventory
 
-Once tokens are defined, list every UI component the design needs. This becomes the build list.
+A complete list of every UI component the product needs. Created once tokens are defined. This is the design and build checklist — if a component is not on the list, it should not be built yet.
 
 - Buttons (primary, secondary, ghost, destructive)
 - Inputs (text, password, select, textarea, checkbox, radio)
@@ -181,7 +181,43 @@ Once tokens are defined, list every UI component the design needs. This becomes 
 - Empty state
 - Avatar
 
-## States to Design
+#### Example — SaaS feedback app
+
+##### Layout
+
+- AppShell
+- SidebarNav
+- TopBar
+- PageHeader
+
+##### Dashboard
+
+- MetricCard
+- FeedbackTrendCard
+- RecentFeedbackList
+- AttentionQueue
+
+##### Feedback
+
+- FeedbackCard
+- FeedbackDetailPanel
+- StatusBadge
+- TagPill
+- SourceIcon
+- SentimentIndicator
+
+##### Shared
+
+- Button
+- Input
+- Select
+- EmptyState
+- LoadingSkeleton
+- ErrorBanner
+
+## State Matrix
+
+A state matrix maps every condition a component or screen can be in. For each state, the design must show what the UI looks like and what the user can do. Components handed off without states defined will have states invented inconsistently in code.
 
 Every interactive component needs all states designed before handoff:
 
@@ -193,6 +229,32 @@ Every interactive component needs all states designed before handoff:
 - Loading
 - Empty
 - Error
+
+### Example — SaaS feedback inbox
+
+#### Data states
+
+- Loading
+- Empty inbox
+- Has feedback
+- API error
+- Search has no results
+- Filter has no results
+
+#### UI states
+
+- No feedback selected
+- Feedback selected
+- Detail panel open
+- Detail panel closed
+- Mobile sidebar open
+- Mobile sidebar closed
+
+#### Permission states
+
+- Normal user
+- Admin
+- Read-only / demo user
 
 ## Recommended Principle
 
