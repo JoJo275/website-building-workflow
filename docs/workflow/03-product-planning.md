@@ -2,6 +2,20 @@
 
 > Start with what users need to do, not what the site should look like.
 
+## Define the Goal
+
+Before design or code, clarify what the site is supposed to do.
+
+| Site type | Goal |
+|-----------|------|
+| Marketing site | Get visitors to understand the product and sign up |
+| Portfolio | Show credibility and examples of work |
+| SaaS app | Let users sign up, log in, and complete workflows |
+| E-commerce | Help users browse, compare, buy, and manage orders |
+| Blog / content site | Publish searchable, readable articles |
+
+This step determines everything else.
+
 ## Questions to Answer First
 
 ```text
