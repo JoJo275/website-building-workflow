@@ -8,6 +8,7 @@ A screen spec is a written description of a single page or major view. Write one
 ## Screen: [Name]
 
 **Route:** /path
+**Auth:** Required / Public
 
 ### Purpose
 
@@ -36,7 +37,13 @@ One sentence. What does this screen do for the user?
 - **Empty** —
 - **Loaded** —
 - **Error** —
+- **Filtered** — (if applicable)
 - **Mobile** —
+
+### Connected Screens
+
+- Links to: /path
+- Opened from: /path
 
 ### Acceptance Criteria
 
@@ -54,6 +61,7 @@ One sentence. What does this screen do for the user?
 ## Example: Project Board (Kanban View)
 
 **Route:** /projects/:id/board
+**Auth:** Required
 
 ### Purpose
 
@@ -117,11 +125,18 @@ Displays all tasks for a project as cards grouped into status columns (To do, In
 - Task status updates must be optimistic with a rollback on API error.
 - The board must handle up to 500 tasks without layout or scroll performance issues.
 
+### Connected Screens
+
+- Links to: /projects/:id/tasks/:taskId (task detail)
+- Links to: /projects/:id/list, /projects/:id/timeline (view switcher)
+- Opened from: /projects (project list)
+
 ---
 
 ## Example: Dashboard
 
 **Route:** /dashboard
+**Auth:** Required
 
 ### Purpose
 
@@ -182,3 +197,9 @@ Give users a quick overview of feedback health and what needs attention.
 
 - Use existing API routes if available. Do not create backend endpoints unless requested.
 - Use Tailwind and design tokens. Avoid inline styles unless necessary.
+
+### Connected Screens
+
+- Links to: /feedback/:id (feedback detail)
+- Links to: /analytics, /settings
+- Opened from: / (root redirect after login)
