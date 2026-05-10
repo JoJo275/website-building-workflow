@@ -151,7 +151,11 @@
     "Laravel",
     "linenums",
     "pymdownx",
-    "superfences"
+    "superfences",
+    "Playwright",
+    "Chromium",
+    "WebKit",
+    "Lighthouse"
   ],
   "ignorePaths": [
     "site/**",

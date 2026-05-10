@@ -123,3 +123,70 @@ Define user tasks
 - **Prompt files (`.prompt.md`)** — store repeatable task prompts in the repo for consistent AI-assisted work
 
 See [Dev Environment Tools](../tools/dev-environment.md) for editor and AI tool details.
+
+## Using /plan Before Implementation
+
+Use `/plan` in Copilot agent mode before writing code for any non-trivial change.
+
+Format the plan request with full context:
+
+```text
+/plan Implement the FeedbackCard component based on docs/ui/components/feedback-card.md and the Figma reference.
+
+Before editing:
+- list files you will change
+- identify existing components to reuse
+- identify any missing props or types
+- do not modify backend files
+```
+
+Review the plan before accepting it. If the files listed look wrong or too broad, refine the prompt before proceeding.
+
+`/plan` is for the immediate coding task only. Use markdown files for stable decisions and project structure.
+
+## Visual QA After Implementation
+
+After Copilot implements a UI, compare it against the design reference before committing.
+
+Check:
+
+- Sidebar width
+- Card spacing
+- Font sizes
+- Line height
+- Border radius
+- Colour tokens
+- Empty states
+- Mobile layout
+- Hover and focus states
+- Loading states
+
+AI-generated UI often gets the general layout right but misses exact values. This is where most visual drift happens.
+
+## End-to-End Tests
+
+Use Playwright for testing real app flows. Playwright supports Chromium, Firefox, and WebKit, and can run locally or in CI.
+
+Plan core flows early, even if you write the tests later:
+
+```text
+User signs up
+User logs in
+User opens inbox
+User filters feedback
+User opens feedback detail
+User changes status
+User adds tag
+User logs out
+```
+
+You do not need Playwright on day one, but structure the app so it can be tested end-to-end later.
+
+## Accessibility and Performance
+
+Run Lighthouse and axe as a final quality pass before launch.
+
+- **Lighthouse** — audits performance, accessibility, SEO, and best practices; runs from Chrome DevTools, command line, or CI
+- **axe DevTools** — accessibility checks in browser, IDE, and CI workflows
+
+For a portfolio or SaaS app, a polished result means fast, accessible, and usable — not just visually correct.
