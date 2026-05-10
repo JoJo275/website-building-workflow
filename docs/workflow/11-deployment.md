@@ -2,6 +2,18 @@
 
 Covers hosting, CI/CD pipelines, domains, and monitoring.
 
+## What Deployment Covers
+
+- Choosing a hosting provider and deployment target
+- CI/CD pipeline setup
+- Environment variable configuration
+- Domain and DNS setup
+- HTTPS and security headers
+- Database provisioning and migrations
+- Rollback procedures
+- Monitoring and uptime checks
+- Analytics and error tracking
+
 ## Static Site Hosting
 
 Frontend only. No server required. The build output is a folder of HTML, CSS, and JS files.

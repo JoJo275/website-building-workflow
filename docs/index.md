@@ -29,6 +29,7 @@ A practical guide for planning, designing, building, testing, deploying, and ite
 
 - [Product Brief](starters/product-brief.md)
 - [Route Map](starters/route-map.md)
+- [Repo Layouts](starters/repo-layouts.md)
 - [Screen Spec](starters/screen-spec.md)
 - [Component Spec](starters/component-spec.md)
 - [AI Task Brief](starters/ai-task-brief.md)

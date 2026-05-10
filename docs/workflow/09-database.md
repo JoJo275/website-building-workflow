@@ -2,6 +2,16 @@
 
 Covers schema design, migrations, and data management for development and production.
 
+## What Database Covers
+
+- Schema design and table structure
+- Migrations and version-controlled schema changes
+- Relationships, foreign keys, and indexes
+- Seed data for local development
+- Environment separation (dev, test, production)
+- Backup and restore strategy
+- Soft deletes and data retention
+
 ## Schema Planning
 
 Start with user tasks, not tables. Ask: what data does the app need to store to support each task?
