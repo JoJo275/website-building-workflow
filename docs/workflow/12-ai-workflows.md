@@ -162,12 +162,3 @@ Check:
 - Loading states
 
 AI-generated UI often gets the general layout right but misses exact values. This is where most visual drift happens.
-
-## Accessibility and Performance
-
-Run Lighthouse and axe as a final quality pass before launch.
-
-- **Lighthouse** — audits performance, accessibility, SEO, and best practices; runs from Chrome DevTools, command line, or CI
-- **axe DevTools** — accessibility checks in browser, IDE, and CI workflows
-
-For a portfolio or SaaS app, a polished result means fast, accessible, and usable — not just visually correct.

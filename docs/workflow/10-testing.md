@@ -71,6 +71,15 @@ User logs out
 
 You do not need Playwright on day one, but structure the app so core flows can be tested end-to-end later.
 
+## Accessibility and Performance
+
+Run Lighthouse and axe as a final quality pass before launch.
+
+- **Lighthouse** — audits performance, accessibility, SEO, and best practices; runs from Chrome DevTools, command line, or CI
+- **axe DevTools** — accessibility checks in browser, IDE, and CI workflows
+
+A polished site is fast, accessible, and usable — not just visually correct.
+
 ## Checklist
 
 | Check | Status | Notes |
