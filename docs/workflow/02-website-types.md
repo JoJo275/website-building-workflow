@@ -36,3 +36,22 @@ The goal determines everything else — structure, features, and hosting.
 - Requires a server or serverless functions
 - Handles user-specific data, auth, and payments
 - Best for: SaaS apps, dashboards, e-commerce
+
+## What Makes Up a Website
+
+Most websites are composed of some combination of these layers:
+
+| Layer | What it is | Examples |
+|---|---|---|
+| HTML | Structure and content | Pages, headings, forms, links |
+| CSS | Visual presentation | Layout, colour, typography, spacing |
+| JavaScript | Interactivity and logic | UI behaviour, API calls, state |
+| Assets | Static files | Images, fonts, icons, videos |
+| Backend | Server-side logic | APIs, auth, business rules |
+| Database | Persistent data | Users, content, orders, settings |
+| CDN | Edge delivery | Cached HTML, images, JS, CSS |
+| Third-party services | External integrations | Payments, email, analytics, storage |
+
+Not every site needs every layer. A landing page may only need HTML, CSS, and a CDN. A SaaS app needs most of them.
+
+The workflow pages cover each layer in turn: [Frontend](07-frontend.md), [Backend](08-backend.md), [Database](09-database.md), [Deployment](11-deployment.md).

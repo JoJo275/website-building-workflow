@@ -163,25 +163,6 @@ Check:
 
 AI-generated UI often gets the general layout right but misses exact values. This is where most visual drift happens.
 
-## End-to-End Tests
-
-Use Playwright for testing real app flows. Playwright supports Chromium, Firefox, and WebKit, and can run locally or in CI.
-
-Plan core flows early, even if you write the tests later:
-
-```text
-User signs up
-User logs in
-User opens inbox
-User filters feedback
-User opens feedback detail
-User changes status
-User adds tag
-User logs out
-```
-
-You do not need Playwright on day one, but structure the app so it can be tested end-to-end later.
-
 ## Accessibility and Performance
 
 Run Lighthouse and axe as a final quality pass before launch.

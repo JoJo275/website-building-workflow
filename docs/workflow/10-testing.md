@@ -52,6 +52,25 @@ Are permissions enforced correctly?
 
 See [Dev Environment Tools](../tools/dev-environment.md) for testing and linting tool details.
 
+## End-to-End Test Flows
+
+Plan core user flows early, even if you write the tests later. Playwright can run these flows in a real browser, locally or in CI.
+
+Example flows for a SaaS app:
+
+```text
+User signs up
+User logs in
+User opens inbox
+User filters feedback
+User opens feedback detail
+User changes status
+User adds tag
+User logs out
+```
+
+You do not need Playwright on day one, but structure the app so core flows can be tested end-to-end later.
+
 ## Checklist
 
 | Check | Status | Notes |
