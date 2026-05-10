@@ -2,9 +2,58 @@
 
 A screen spec is a written description of a single page or major view. Write one per major screen before building it. It gives you a clear reference while coding and gives Copilot the context it needs to generate useful output — layout, components, data, states, and constraints — rather than guessing from a vague prompt.
 
+## Template
+
+```markdown
+## Screen: [Name]
+
+**Route:** /path
+
+### Purpose
+
+One sentence. What does this screen do for the user?
+
+### Primary Actions
+
+- Action 1
+- Action 2
+
+### Layout
+
+- **Region name** — what it contains
+
+### Components
+
+- `ComponentName`
+
+### Data Needed
+
+- `field_name` — description
+
+### States
+
+- **Loading** —
+- **Empty** —
+- **Loaded** —
+- **Error** —
+- **Mobile** —
+
+### Acceptance Criteria
+
+| Criterion | Status | Notes |
+|-----------|--------|-------|
+| | To do | |
+
+### Implementation Constraints
+
+-
+```
+
 ---
 
 ## Example: Project Board (Kanban View)
+
+**Route:** /projects/:id/board
 
 ### Purpose
 
@@ -71,6 +120,8 @@ Displays all tasks for a project as cards grouped into status columns (To do, In
 ---
 
 ## Example: Dashboard
+
+**Route:** /dashboard
 
 ### Purpose
 
