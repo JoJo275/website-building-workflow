@@ -298,7 +298,27 @@ Write copy before or alongside implementation, not as an afterthought.
 - **Astro** — good for content-heavy or mostly-static sites with minimal JavaScript
 - **Tailwind CSS** — utility-first styling; keeps styles co-located with components
 - **TypeScript** — adds type safety; catches mistakes at edit time rather than runtime
-- **Storybook** — develop and review UI components in isolation, outside the full app
+- **Storybook** — develop and review UI components in isolation, outside the full app; covers hard-to-reach states without needing the full app running
+
+## Storybook Workflow
+
+Storybook is one of the better workflows for component-heavy apps. Build each component and all its variants in Storybook before wiring it into a real screen.
+
+For a feedback card component, stories might look like:
+
+```text
+FeedbackCard / default
+FeedbackCard / urgent
+FeedbackCard / resolved
+FeedbackCard / with many tags
+FeedbackCard / long message
+FeedbackCard / mobile
+FeedbackCard / loading skeleton
+```
+
+This pairs well with Copilot — ask it to implement one story at a time. Each story is a small, verifiable unit of work with a clear acceptance condition (does it match the design?). Once all stories pass, wiring the component into the dashboard is straightforward.
+
+Define stories in the component spec before implementation. See [Component Spec](../starters/component-spec.md).
 
 See [Frontend Tools](../tools/frontend.md) for a full breakdown of frameworks, CSS tools, and build systems.
 
