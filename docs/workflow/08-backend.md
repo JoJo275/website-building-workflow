@@ -2,6 +2,19 @@
 
 Backend handles server-side logic: authentication, data access, business rules, and integrations.
 
+## What Backend Includes
+
+- API routes and request handling
+- Authentication and session management
+- Authorisation and access control
+- Database queries and migrations
+- Input validation and sanitisation
+- File upload handling
+- Email sending
+- Payment processing
+- Background jobs
+- Admin tooling
+
 ## Backend Responsibilities
 
 | Responsibility | What it involves |
