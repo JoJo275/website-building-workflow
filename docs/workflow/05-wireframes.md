@@ -90,9 +90,8 @@ What must always be visible?
 ## Common Tools
 
 - **Paper and pen** — fastest for early exploration; work out the layout before opening any software
-- **Figma** — recommended for digital wireframes; easy to share, annotate, and hand off to a developer
+- **A digital design tool** — for wireframes that need to be shared, annotated, or handed off; see [Design Tools](../tools/design.md)
 - **Excalidraw** — browser-based with no sign-up required; good for quick sketches and rough flows
-- **FigJam** — better for mapping user flows and page relationships than pixel-precise wireframes
 
 See [Design Tools](../tools/design.md) for full details.
 

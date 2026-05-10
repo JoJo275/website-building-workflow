@@ -4,7 +4,7 @@ Applies colour, typography, and style to a working wireframe.
 
 ## Design Language
 
-Before opening Figma, define what the site should feel like. This is the design brief — a short, written description of the intended experience. It gives every visual decision a reference point.
+Before opening a design tool, define what the site should feel like. This is the design brief — a short, written description of the intended experience. It gives every visual decision a reference point.
 
 ### What to define
 
@@ -258,7 +258,7 @@ Every interactive component needs all states designed before handoff:
 
 ## Recommended Principle
 
-> Figma defines appearance. Markdown specs define behaviour. Code implements both.
+> Design files define appearance. Markdown specs define behaviour. Code implements both.
 
 ## Responsive Design
 
@@ -274,7 +274,7 @@ After the visual design is stable, build a prototype to test how screens connect
 
 ### What a prototype is
 
-A prototype is a clickable simulation of the product. It links Figma frames together so that clicking a button navigates to the next screen, opens a panel, or changes a state — without any real backend logic.
+A prototype is a clickable simulation of the product. It links design frames together so that clicking a button navigates to the next screen, opens a panel, or changes a state — without any real backend logic.
 
 It is not a design. It is not code. It is a test of whether the flow makes sense.
 
@@ -294,11 +294,11 @@ Focus on the paths that matter most:
 - Any flow that involves multiple steps or conditional branching
 - Screens with complex interactions (drawers, multi-step forms, modals)
 
-### How to build one in Figma
+### How to build one
 
 1. Create a frame for each key screen in the flow
-2. Use Figma's **Prototype** panel to add connections between frames
-3. Set the trigger (On Click, On Hover, etc.) and the destination frame
+2. Add connections between frames using your design tool's prototype or link mode
+3. Set the trigger (on click, on hover, etc.) and the destination frame
 4. Add transitions if useful — but keep them simple
 5. Share the prototype link with teammates or test users
 
@@ -341,21 +341,21 @@ Most projects need medium fidelity. High fidelity prototypes take significantly 
 Once the prototype is reviewed and the flow is signed off:
 
 - Annotate frames with behaviour notes (what happens on hover, what the loading state looks like, what the error state says)
-- Export the prototype link alongside the Figma design file
+- Export the prototype link alongside the design file
 - Write a screen spec for complex screens using the [Screen Spec template](../starters/screen-spec.md)
 
 The prototype answers *where does this go*. The screen spec answers *what does it do*.
 
 ## Common Tools
 
-- **Figma** — primary tool for visual design, component libraries, and design system documentation
-- **Coolors or Realtime Colors** — generate and test colour palettes quickly against real UI
-- **Google Fonts or Fontpair** — browse and pair typefaces before committing to a font stack
-- **Heroicons, Phosphor, or Lucide** — icon libraries with consistent styles; pick one and stick to it
-- **Unsplash or Pexels** — placeholder images for mockups before real photography is available
+- **A vector design tool** — for visual design, component libraries, and design system documentation; see [Design Tools](../tools/design.md)
+- **A colour tool** — generate and test palettes against real UI before committing
+- **A type reference** — browse and pair typefaces before committing to a font stack
+- **An icon library** — pick one consistent style and stick to it throughout
+- **Placeholder images** — use stock photos in mockups before real photography is available
 
-See [Design Tools](../tools/design.md) for full details.
+See [Design Tools](../tools/design.md) for specific recommendations.
 
 ## Output
 
-Figma file in `design-source/`. Exported assets in `design-source/exports/`.
+Design file in `design-source/`. Exported assets in `design-source/exports/`.

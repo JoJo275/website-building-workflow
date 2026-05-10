@@ -81,7 +81,7 @@ Constraints:
 
 A website has three separate sources of truth. Keeping them aligned is the main challenge.
 
-**Design truth** — what it should look like. Usually Figma.
+**Design truth** — what it should look like. A design file, annotated mockup, or screenshot.
 
 **Behaviour truth** — what should happen when users interact. Usually markdown specs, user stories, or tickets.
 
@@ -131,7 +131,7 @@ Use `/plan` in Copilot agent mode before writing code for any non-trivial change
 Format the plan request with full context:
 
 ```text
-/plan Implement the FeedbackCard component based on docs/ui/components/feedback-card.md and the Figma reference.
+/plan Implement the FeedbackCard component based on docs/ui/components/feedback-card.md and the design reference.
 
 Before editing:
 - list files you will change

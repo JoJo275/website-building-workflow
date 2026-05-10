@@ -32,10 +32,6 @@ Users currently miss important project updates unless they check their email. Ad
 - Notification filtering or categories
 - Real-time delivery via WebSockets (polling is acceptable for v1)
 
-## Design Reference
-
-[Figma — Notifications v1](https://figma.com/file/example/notifications-v1)
-
 ## Technical Notes
 
 - New `notifications` table: `id`, `user_id`, `type`, `payload` (JSONB), `read_at`, `created_at`
