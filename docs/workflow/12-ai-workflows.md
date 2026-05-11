@@ -16,31 +16,34 @@ Idea
 → commit
 ```
 
-## Weak vs Strong Prompts
+## Weak vs strong prompts
 
-**Weak:**
+The difference between a frustrating session and a productive one is almost
+always in how much context the prompt carries.
 
-```text
-Idea
-→ vague Copilot prompt
-→ many files change
-→ eyeball the result
-→ keep prompting until it seems okay
-```
+=== "Weak"
 
-**Strong:**
+    ```text
+    Idea
+    → vague Copilot prompt
+    → many files change
+    → eyeball the result
+    → keep prompting until it seems okay
+    ```
 
-```text
-Idea
-→ task brief with context
-→ constraints listed
-→ acceptance criteria written
-→ plan reviewed before code is written
-→ small diff
-→ tests run
-→ diff reviewed manually
-→ commit
-```
+=== "Strong"
+
+    ```text
+    Idea
+    → task brief with context
+    → constraints listed
+    → acceptance criteria written
+    → plan reviewed before code is written
+    → small diff
+    → tests run
+    → diff reviewed manually
+    → commit
+    ```
 
 ## When to Use Each Mode
 
@@ -77,15 +80,18 @@ Constraints:
 - Reviewing a page for gaps and inconsistencies
 - Generating template stubs to fill in manually
 
-## The Three Truths
+## The three truths
 
 A website has three separate sources of truth. Keeping them aligned is the main challenge.
 
-**Design truth** — what it should look like. A design file, annotated mockup, or screenshot.
+Design truth
+:   What it should look like. A design file, annotated mockup, or screenshot.
 
-**Behaviour truth** — what should happen when users interact. Usually markdown specs, user stories, or tickets.
+Behaviour truth
+:   What should happen when users interact. Usually markdown specs, user stories, or tickets.
 
-**Code truth** — how it is actually implemented. Usually repo files, components, tests, and API routes.
+Code truth
+:   How it is actually implemented. Usually repo files, components, tests, and API routes.
 
 Most friction with AI coding tools comes from providing only the design truth. A mockup tells the AI what something looks like, but not:
 
@@ -124,7 +130,12 @@ Define user tasks
 
 See [Dev Environment Tools](../tools/dev-environment.md) for editor and AI tool details.
 
-## Using /plan Before Implementation
+## Using /plan before implementation
+
+!!! tip "Plan first, code second"
+    For anything bigger than a one-line tweak, ask for a plan before any
+    code is written. A two-minute review of the plan saves the
+    twenty-minute revert.
 
 Use `/plan` in Copilot agent mode before writing code for any non-trivial change.
 
