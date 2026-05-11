@@ -1,18 +1,18 @@
 # Backend
 
-Backend handles server-side logic: authentication, data access, business rules, and integrations.
+Backend handles server-side logic: [authentication](../glossary.md#authentication), data access, business rules, and integrations.
 
 ## What Backend Includes
 
 - API routes and request handling
-- Authentication and session management
-- Authorisation and access control
-- Database queries and migrations
-- Input validation and sanitisation
+- [Authentication](../glossary.md#authentication) and session management
+- [Authorisation](../glossary.md#authorisation) and access control
+- Database queries and [migrations](../glossary.md#migration)
+- Input validation and [sanitisation](../glossary.md#sanitisation)
 - File upload handling
 - Email sending
 - Payment processing
-- Background jobs
+- [Background jobs](../glossary.md#background-job)
 - Admin tooling
 
 ## Backend Responsibilities
@@ -20,15 +20,15 @@ Backend handles server-side logic: authentication, data access, business rules, 
 | Responsibility | What it involves |
 |---|---|
 | **User accounts** | Registration, profile data, account settings, deactivation |
-| **Authentication** | Login, logout, session management, token refresh, password reset |
+| **Authentication** | Login, logout, [session](../glossary.md#session) management, token refresh, password reset |
 | **Permissions** | Role-based or attribute-based access control — who can read, write, or delete what |
-| **Database access** | Querying, writing, and migrating data; connection pooling; query optimisation |
+| **Database access** | Querying, writing, and migrating data; [connection pooling](../glossary.md#connection-pooling); query optimisation |
 | **API endpoints** | Request handling, input validation, response shaping, versioning |
 | **File uploads** | Receiving files, validating type and size, storing to disk or object storage (S3, R2), returning a stable URL |
 | **Email sending** | Transactional email (welcome, password reset, notifications) via a delivery service |
-| **Payments** | Checkout flow, webhook handling, subscription lifecycle, refunds |
+| **Payments** | Checkout flow, [webhook](../glossary.md#webhook) handling, subscription lifecycle, refunds |
 | **Admin tools** | Internal dashboards for viewing and managing data, impersonating users, triggering jobs |
-| **Background jobs** | Async work that should not block a request: email queues, image processing, report generation, scheduled tasks |
+| **[Background jobs](../glossary.md#background-job)** | Async work that should not block a request: email queues, image processing, report generation, scheduled tasks |
 
 ## Example API Routes
 
@@ -45,12 +45,12 @@ GET    /auth/me
 
 ## Security Basics
 
-- Never trust client input — validate and sanitise server-side
-- Use parameterised queries, never string-interpolated SQL
-- Hash passwords with bcrypt or argon2
+- Never trust client input — validate and [sanitise](../glossary.md#sanitisation) server-side
+- Use [parameterised queries](../glossary.md#parameterised-query), never string-interpolated SQL
+- Hash passwords with [bcrypt](../glossary.md#bcrypt) or argon2
 - Use HTTPS everywhere
 - Apply least-privilege to database credentials
-- Rate-limit auth endpoints
+- [Rate-limit](../glossary.md#rate-limiting) auth endpoints
 
 ## Common Tools
 

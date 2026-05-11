@@ -82,7 +82,7 @@ Define this before the design system. Every token, spacing decision, and compone
 
 Design tokens are the named values that make up your design system. Define them before building any components. Every visual decision in the product — spacing, colour, shape, motion — should come from this list, not be invented per component.
 
-These tokens are later expressed as CSS custom properties (see [Frontend → CSS](07-frontend.md)).
+These tokens are later expressed as CSS custom properties (see [Frontend → CSS](07-frontend.md)). For a worked color palette, dark-mode token table, and token editing recipes, see [Design Tokens](../design/design-tokens.md) and [Visual Style](../design/visual-style.md).
 
 ### Typography
 

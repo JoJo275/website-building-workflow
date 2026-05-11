@@ -10,10 +10,10 @@ Frontend covers everything that runs in the browser: structure, style, interacti
 - Framework components (React, Vue, Svelte, etc.)
 - Routing
 - API calls
-- Loading states
-- Error states
+- [Loading states](../glossary.md#loading-state)
+- [Error states](../glossary.md#error-state)
 - Responsive layouts
-- Accessibility
+- [Accessibility](../glossary.md#accessibility)
 
 ## Common Components
 
@@ -35,9 +35,9 @@ DashboardMetric
 
 CSS controls every visual property of the page. Knowing the core concepts and patterns prevents the most common frontend problems.
 
-### Custom properties (design tokens in code)
+### Custom properties ([design tokens](../glossary.md#design-token) in code)
 
-The design tokens defined in [Visual Design](06-visual-design.md) are implemented as CSS custom properties. Define them once on `:root` and reference them everywhere.
+The design tokens defined in [Visual Design](06-visual-design.md) are implemented as [CSS custom properties](../glossary.md#css-custom-property). Define them once on `:root` and reference them everywhere.
 
 ```css
 :root {
@@ -102,7 +102,7 @@ The design tokens defined in [Visual Design](06-visual-design.md) are implemente
 }
 ```
 
-Never hardcode a colour, size, or spacing value inside a component rule. Reference a token instead.
+Never hardcode a colour, size, or spacing value inside a component rule. Reference a token instead. For the full file-split architecture, theme preset pattern, and component promotion rule, see [Design Tokens](../design/design-tokens.md).
 
 ### Box model
 
@@ -294,10 +294,10 @@ Write copy before or alongside implementation, not as an afterthought.
 
 ## Common Tools
 
-- **React + Next.js** — the most common choice for component-based apps with routing and server rendering
+- **React + Next.js** — the most common choice for component-based apps with routing and [server rendering](../glossary.md#ssr)
 - **Astro** — good for content-heavy or mostly-static sites with minimal JavaScript
-- **Tailwind CSS** — utility-first styling; keeps styles co-located with components
-- **TypeScript** — adds type safety; catches mistakes at edit time rather than runtime
+- **Tailwind CSS** — [utility-first](../glossary.md#utility-first-css) styling; keeps styles co-located with components
+- **TypeScript** — adds [type safety](../glossary.md#typescript); catches mistakes at edit time rather than runtime
 - **Storybook** — develop and review UI components in isolation, outside the full app; covers hard-to-reach states without needing the full app running
 
 ## Storybook Workflow

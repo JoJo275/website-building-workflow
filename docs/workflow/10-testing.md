@@ -22,12 +22,12 @@ For a solo developer, you do not need enterprise-level QA at first, but you do n
 | Type | What it covers |
 |---|---|
 | Manual QA | Visual layout, real user flows, edge cases |
-| Unit tests | Individual functions and utilities |
+| [Unit tests](../glossary.md#unit-test) | Individual functions and utilities |
 | Component tests | UI components in isolation |
-| Integration tests | Multiple parts working together |
-| End-to-end tests | Full user flows in a real browser |
+| [Integration tests](../glossary.md#integration-test) | Multiple parts working together |
+| [End-to-end tests](../glossary.md#end-to-end-test) | Full user flows in a real browser |
 | Accessibility checks | Keyboard nav, screen reader, contrast |
-| Performance checks | Load times, Core Web Vitals |
+| Performance checks | Load times, [Core Web Vitals](../glossary.md#core-web-vitals) |
 
 ## Manual QA Questions
 
@@ -44,10 +44,10 @@ Are permissions enforced correctly?
 
 ## Common Tools
 
-- **Playwright** — end-to-end browser testing; runs real user flows in a real browser
+- **Playwright** — [end-to-end](../glossary.md#end-to-end-test) browser testing; runs real user flows in a real browser
 - **Vitest or Jest** — unit and component testing for JavaScript and TypeScript
-- **axe DevTools** — browser extension for automated accessibility checks against WCAG
-- **Chrome DevTools** — inspect layout, simulate mobile viewports, and audit network requests manually
+- **axe DevTools** — browser extension for automated accessibility checks against [WCAG](../glossary.md#wcag)
+- **Chrome DevTools** — inspect layout, simulate mobile [viewports](../glossary.md#viewport), and audit network requests manually
 - **Lighthouse** — built into Chrome DevTools; audits performance, accessibility, and SEO in one pass
 
 See [Dev Environment Tools](../tools/dev-environment.md) for testing and linting tool details.

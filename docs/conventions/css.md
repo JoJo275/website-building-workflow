@@ -40,7 +40,7 @@ static/css/
 @import "./effects.css";
 ```
 
-**Load order is significant.** Tokens must be defined before base styles reference them. Components must be defined before effects polish them. Do not reorder without thinking through the cascade implications.
+**Load order is significant.** Tokens must be defined before base styles reference them. Components must be defined before effects polish them. Do not reorder without thinking through the [cascade](../glossary.md#cascade) implications.
 
 ### Why each file exists
 
@@ -52,7 +52,7 @@ static/css/
 | `components.css` | Component vocabulary | Only named component classes (`.[prefix]-card`, `.[prefix]-button`, etc.). |
 | `effects.css` | Decoration | Transitions, animations, hover/focus polish, gradients. Everything here can be deleted in a print stylesheet. |
 
-Each file has a charter. A PR that adds a `:root { --… }` block to `components.css` is rejected — the charter is the file's contract.
+Each file has a charter. A PR that adds a `:root { --… }` block to `components.css` is rejected — the charter is the file's contract. For editing recipes, common mistakes, and a worked token table, see [Design Tokens](../design/design-tokens.md).
 
 ## Design tokens
 
@@ -124,8 +124,8 @@ A new design token must update every file that references it — the token defin
 
 | Layer | Where | When to use |
 |---|---|---|
-| Design tokens | CSS custom properties in `tokens.css` | One source of truth for colour, radius, shadow |
-| Utility classes | Directly in HTML (`class="bg-white border …"`) | First reach for every visual decision |
+| [Design tokens](../glossary.md#design-token) | CSS custom properties in `tokens.css` | One source of truth for colour, radius, shadow |
+| [Utility classes](../glossary.md#utility-first-css) | Directly in HTML (`class="bg-white border …"`) | First reach for every visual decision |
 | Component classes | `@layer components` in CSS, via `@apply` | Only after the same utility string appears in three or more templates |
 
 ### Component class naming

@@ -33,11 +33,11 @@ A fast, collaborative editor written in Rust. Lightweight with built-in multipla
 
 <https://zed.dev>
 
-## Version Control
+## [Version Control](../glossary.md#version-control)
 
 ### Git
 
-The standard version control system. All web development workflows depend on it.
+The standard [version control](../glossary.md#version-control) system. All web development workflows depend on it.
 
 Essential commands:
 
@@ -56,8 +56,8 @@ git checkout -b feature/name
 
 The standard platform for hosting Git repositories, pull requests, code review, and CI/CD.
 
-- Pull requests and code review
-- GitHub Actions for CI/CD
+- [Pull requests](../glossary.md#pull-request) and code review
+- GitHub Actions for [CI/CD](../glossary.md#cicd)
 - GitHub Pages for static site hosting
 - Issues and project boards
 

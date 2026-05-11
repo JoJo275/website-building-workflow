@@ -25,15 +25,15 @@ The goal determines everything else — structure, features, and hosting.
 
 ## Static vs Dynamic Sites
 
-**Static sites** serve pre-built HTML files with no server-side processing per request.
+**[Static sites](../glossary.md#static-site)** serve pre-built HTML files with no server-side processing per request.
 
 - Faster and cheaper to host
 - No database required
 - Best for: landing pages, portfolios, blogs, docs
 
-**Dynamic sites** generate pages on the server or client per request.
+**[Dynamic sites](../glossary.md#dynamic-site)** generate pages on the server or client per request.
 
-- Requires a server or serverless functions
+- Requires a server or [serverless](../glossary.md#serverless) functions
 - Handles user-specific data, auth, and payments
 - Best for: SaaS apps, dashboards, e-commerce
 
@@ -49,7 +49,7 @@ Most websites are composed of some combination of these layers:
 | Assets | Static files | Images, fonts, icons, videos |
 | Backend | Server-side logic | APIs, auth, business rules |
 | Database | Persistent data | Users, content, orders, settings |
-| CDN | Edge delivery | Cached HTML, images, JS, CSS |
+| [CDN](../glossary.md#cdn) | Edge delivery | Cached HTML, images, JS, CSS |
 | Third-party services | External integrations | Payments, email, analytics, storage |
 
 Not every site needs every layer. A landing page may only need HTML, CSS, and a CDN. A SaaS app needs most of them.

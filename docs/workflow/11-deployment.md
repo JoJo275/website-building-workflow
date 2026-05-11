@@ -1,16 +1,16 @@
 # Deployment
 
-Covers hosting, CI/CD pipelines, domains, and monitoring.
+Covers hosting, [CI/CD](../glossary.md#cicd) pipelines, domains, and monitoring.
 
 ## What Deployment Covers
 
 - Choosing a hosting provider and deployment target
-- CI/CD pipeline setup
-- Environment variable configuration
-- Domain and DNS setup
-- HTTPS and security headers
-- Database provisioning and migrations
-- Rollback procedures
+- [CI/CD](../glossary.md#cicd) pipeline setup
+- [Environment variable](../glossary.md#environment-variable) configuration
+- Domain and [DNS](../glossary.md#dns) setup
+- [HTTPS](../glossary.md#https) and security headers
+- Database provisioning and [migrations](../glossary.md#migration)
+- [Rollback](../glossary.md#rollback) procedures
 - Monitoring and uptime checks
 - Analytics and error tracking
 
@@ -58,10 +58,10 @@ If your app has user accounts, a database, or server-side logic, it is dynamic.
 
 ## Common Tools
 
-- **GitHub Actions** — the standard CI/CD pipeline for GitHub repos; runs tests, lint, and deploys on push
+- **GitHub Actions** — the standard [CI/CD](../glossary.md#cicd) pipeline for GitHub repos; runs tests, lint, and deploys on push
 - **Vercel or Netlify** — simplest deployment for Next.js and static sites; auto-deploys from the main branch
 - **Railway or Render** — managed hosting for full-stack apps and databases without cloud provider complexity
-- **Sentry** — error tracking in production; captures exceptions with full stack traces and context
+- **Sentry** — [error tracking](../glossary.md#error-tracking) in production; captures exceptions with full stack traces and context
 - **Better Uptime or UptimeRobot** — monitors that the site responds and alerts you on downtime
 - **Plausible or PostHog** — privacy-friendly analytics for tracking real visitor and usage data
 
@@ -71,10 +71,10 @@ See [Third-Party Services](../tools/third-party.md) for a full list of monitorin
 
 | Check | Status | Notes |
 |-------|--------|-------|
-| Environment variables configured in the hosting provider | To do | |
+| [Environment variables](../glossary.md#environment-variable) configured in the hosting provider | To do | |
 | Production database provisioned and migrated | To do | |
-| Domain purchased and DNS configured | To do | |
-| HTTPS enabled | To do | |
+| Domain purchased and [DNS](../glossary.md#dns) configured | To do | |
+| [HTTPS](../glossary.md#https) enabled | To do | |
 | Build succeeds locally with production config | To do | |
 
 ## CI/CD Pipeline

@@ -2,7 +2,7 @@
 
 The conventions in [Semantic HTML](html.md) and [CSS Architecture](css.md) describe the rules. This page shows what those rules look like when applied to a real project — with names, component lists, and decisions made.
 
-Use it as a template. Swap the prefix, the palette, and the component list for your own. The patterns are the part worth copying.
+Use it as a template. Swap the prefix, the palette, and the component list for your own. The patterns are the part worth copying. For a worked color palette and visual style decisions that go alongside this structure, see [Visual Style](../design/visual-style.md).
 
 ---
 

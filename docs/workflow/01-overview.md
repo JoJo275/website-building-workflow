@@ -22,10 +22,10 @@ Goal
 ## Solo Developer Shortcut
 
 1. Write what the site or app should do.
-2. Make a route map.
-3. Wireframe the major screens.
+2. Make a [route map](../glossary.md#route-map).
+3. [Wireframe](../glossary.md#wireframe) the major screens.
 4. Turn the best wireframe into a polished design.
-5. Write a short screen spec.
+5. Write a short [screen spec](../glossary.md#screen-spec).
 6. Use AI planning before coding.
 7. Implement one screen or component at a time.
 8. Compare output against the design.
@@ -36,12 +36,12 @@ Goal
 
 A full team workflow adds review, design, and QA gates at each stage:
 
-1. Product brief
+1. [Product brief](../glossary.md#product-brief)
 2. User flows
-3. Sitemap
-4. Wireframes
+3. [Sitemap](../glossary.md#sitemap)
+4. [Wireframes](../glossary.md#wireframe)
 5. Visual design
-6. Prototype
+6. [Prototype](../glossary.md#prototype)
 7. Design review
 8. Frontend build
 9. Backend build

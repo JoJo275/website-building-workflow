@@ -84,10 +84,16 @@ nav:
       - PR Review: starters/pr-review.md
       - Debugging Template: starters/debugging-template.md
       - Feature Spec: starters/feature-spec.md
+  - Design:
+      - Overview: design/index.md
+      - Design Tokens: design/design-tokens.md
+      - Visual Style: design/visual-style.md
+      - Copy & Voice: design/copy-voice.md
   - Conventions:
       - Semantic HTML: conventions/html.md
       - CSS Architecture: conventions/css.md
       - Example Design System: conventions/example-system.md
+  - Glossary: glossary.md
   - Tools:
       - Overview: tools/index.md
       - Design Tools: tools/design.md

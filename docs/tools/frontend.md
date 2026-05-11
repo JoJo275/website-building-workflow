@@ -16,7 +16,7 @@ A JavaScript library for building component-based UIs. The most widely used fron
 
 ### Next.js
 
-A React meta-framework with file-based routing, server-side rendering, static generation, and API routes.
+A React [meta-framework](../glossary.md#meta-framework) with file-based routing, [server-side rendering](../glossary.md#ssr), static generation, and API routes.
 
 **Good for:** Full-stack apps, marketing sites, dashboards, anything that needs SEO or server rendering.
 
@@ -33,7 +33,7 @@ A progressive JavaScript framework with a gentler learning curve than React.
 
 ### Svelte / SvelteKit
 
-A compiler-based framework that produces smaller bundles. SvelteKit is the full-stack meta-framework.
+A compiler-based framework that produces smaller bundles. SvelteKit is the full-stack [meta-framework](../glossary.md#meta-framework).
 
 - Very little boilerplate
 - Reactivity built into the language
@@ -55,7 +55,7 @@ A static site framework optimised for content-heavy sites with minimal JavaScrip
 
 ### Tailwind CSS
 
-A utility-first CSS framework. Instead of writing custom CSS, you apply small utility classes directly in HTML.
+A [utility-first](../glossary.md#utility-first-css) CSS framework. Instead of writing custom CSS, you apply small utility classes directly in HTML.
 
 ```html
 <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
@@ -69,7 +69,7 @@ A utility-first CSS framework. Instead of writing custom CSS, you apply small ut
 
 <https://tailwindcss.com>
 
-### CSS Modules
+### [CSS Modules](../glossary.md#css-modules)
 
 Scoped CSS files where class names are automatically made unique per component. No global style conflicts.
 

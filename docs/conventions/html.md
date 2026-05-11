@@ -42,7 +42,7 @@ The most important frontend decision is also the cheapest: use the right HTML el
 5. **Is this a control?** → `<button>`, `<a>`, or `<input>`
 6. **None of the above?** → `<div>` is correct. Move on.
 
-If you find yourself adding `role="button"` or `role="navigation"` to a `<div>`, stop — there is a real element for that. ARIA roles exist for cases where the right element genuinely does not exist, which is rare.
+If you find yourself adding `role="button"` or `role="navigation"` to a `<div>`, stop — there is a real element for that. [ARIA](../glossary.md#aria) roles exist for cases where the right element genuinely does not exist, which is rare.
 
 ## Tags carry meaning, classes carry style
 
@@ -73,9 +73,9 @@ When meaning lives in the tag, the entire site can be restyled by swapping a sty
 | Requirement | Why |
 |---|---|
 | Heading levels are sequential — `<h1>` once per page, then `<h2>`s, no skipping | Screen readers use headings to navigate; gaps break the outline |
-| Colour contrast ≥ 4.5:1 for body text, 3:1 for large text and UI borders | WCAG AA minimum |
+| Colour contrast ≥ 4.5:1 for body text, 3:1 for large text and UI borders | [WCAG](../glossary.md#wcag) AA minimum |
 | Every image has `alt=""` (decorative) or descriptive alt text | Screen readers read alt text aloud |
-| Skip-link to `#main` as the first focusable element | Keyboard users need a way past the nav on every page |
+| [Skip-link](../glossary.md#skip-link) to `#main` as the first focusable element | Keyboard users need a way past the nav on every page |
 | All interactive elements reachable and operable by keyboard alone | Mouse-only UIs exclude a significant percentage of users |
 | Status indicators use icon + text + colour — never colour alone | Required for colour-blind and monochrome-print paths |
 
