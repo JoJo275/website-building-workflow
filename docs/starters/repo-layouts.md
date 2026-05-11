@@ -364,6 +364,88 @@ Good for: Type-safe SaaS apps where you want end-to-end type safety without writ
 
 ---
 
+## Vanilla JS / Custom Framework (No Build Step)
+
+A hand-rolled frontend with no framework dependencies. Custom components built as plain JavaScript classes or Web Components. Good when you want full control, zero runtime overhead, or are building something where a framework would be overkill.
+
+```text
+my-site/
+├── public/
+│   ├── index.html              # Entry point — links CSS and JS directly
+│   ├── about.html
+│   └── favicon.ico
+├── src/
+│   ├── components/             # Custom JS components
+│   │   ├── modal.js            # Plain JS class or Web Component
+│   │   ├── tabs.js
+│   │   ├── toast.js
+│   │   └── dropdown.js
+│   ├── css/
+│   │   ├── tokens.css          # CSS custom properties
+│   │   ├── base.css            # Reset, root styles
+│   │   ├── layout.css          # Page shells and grids
+│   │   ├── components.css      # Component classes
+│   │   └── main.css            # @import entry point
+│   ├── js/
+│   │   ├── app.js              # Entry point — initialises components
+│   │   ├── router.js           # Client-side router (if SPA-like)
+│   │   ├── api.js              # Fetch wrapper for API calls
+│   │   └── utils/
+│   │       ├── dom.js          # querySelector helpers
+│   │       └── events.js       # Custom event bus
+│   └── pages/                  # Page-specific JS (lazy loaded)
+│       ├── dashboard.js
+│       └── settings.js
+├── tests/
+│   └── components/             # Unit tests (Vitest, no DOM framework needed)
+│       └── modal.test.js
+├── package.json                # Optional — only if using a bundler or test runner
+└── README.md
+```
+
+Good for: Lightweight marketing sites, content pages, embedded widgets, or projects where you own the component architecture completely. Scale by adding Vite as a bundler without changing the structure — point it at `src/js/app.js` and `src/css/main.css`.
+
+---
+
+## Web Components Library
+
+A framework-agnostic component library built on the browser's native Custom Elements API. Components work in any HTML page, React app, Vue app, or plain JS project with no adapter layer.
+
+```text
+my-components/
+├── src/
+│   ├── components/
+│   │   ├── my-button/
+│   │   │   ├── my-button.js        # Custom element definition
+│   │   │   ├── my-button.css       # Component styles (adopted stylesheet)
+│   │   │   └── my-button.stories.js # Storybook Web Components story
+│   │   ├── my-modal/
+│   │   │   ├── my-modal.js
+│   │   │   └── my-modal.css
+│   │   ├── my-toast/
+│   │   └── my-tabs/
+│   ├── tokens/
+│   │   └── tokens.css              # Shared CSS custom properties
+│   ├── utils/
+│   │   └── base-element.js         # Base class with shared helpers
+│   └── index.js                    # Registers all elements; barrel export
+├── .storybook/
+│   ├── main.js
+│   └── preview.js
+├── dist/                           # Build output
+│   ├── index.js                    # ESM bundle
+│   └── tokens.css
+├── tests/
+│   └── my-button.test.js
+├── vite.config.js                  # Library build
+├── package.json                    # type: module; exports map
+└── README.md
+```
+
+Good for: Design systems that need to work across multiple frameworks — a React team, a Vue team, and a plain HTML team can all import the same components. The tradeoff is that Custom Elements have a steeper learning curve than framework components and shadow DOM styling requires care.
+
+---
+
 ## Notes
 
 - Always include a `.env.example` — commit it, never commit `.env`

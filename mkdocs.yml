@@ -93,7 +93,6 @@ nav:
       - Semantic HTML: conventions/html.md
       - CSS Architecture: conventions/css.md
       - Example Design System: conventions/example-system.md
-  - Glossary: glossary.md
   - Tools:
       - Overview: tools/index.md
       - Design Tools: tools/design.md
@@ -101,3 +100,4 @@ nav:
       - Backend & Database: tools/backend.md
       - Dev Environment: tools/dev-environment.md
       - Third-Party Services: tools/third-party.md
+  - Glossary: glossary.md
