@@ -194,7 +194,17 @@
     "Firestore",
     "centering",
     "writable",
-    "tradeoff"
+    "tradeoff",
+    "betterem",
+    "fontawesome",
+    "kwds",
+    "magiclink",
+    "octicons",
+    "pygments",
+    "smartsymbols",
+    "tasklist",
+    "Twemoji",
+    "twemoji"
   ],
   "ignorePaths": [
     "site/**",

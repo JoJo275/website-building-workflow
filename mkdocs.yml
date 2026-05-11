@@ -1,12 +1,21 @@
 site_name: Website Building Workflow
 site_description: A practical workflow for planning, designing, building, testing, and deploying websites.
+site_author: JoJo275
 site_url: https://jojo275.github.io/website-building-workflow/
 repo_url: https://github.com/JoJo275/website-building-workflow
 repo_name: JoJo275/website-building-workflow
 edit_uri: edit/main/docs/
 
+copyright: Copyright &copy; 2024–2026 JoJo275
+
 theme:
   name: material
+  language: en
+  icon:
+    logo: material/sitemap
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -26,32 +35,93 @@ theme:
     text: Inter
     code: JetBrains Mono
   features:
+    # Navigation
     - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top
     - navigation.footer
+    - toc.follow
+    # Search
     - search.highlight
     - search.suggest
+    - search.share
+    # Content
     - content.action.edit
+    - content.action.view
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
 
 markdown_extensions:
+  # Python Markdown core
+  - abbr
   - admonition
   - attr_list
-  - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+  - def_list
+  - footnotes
+  - md_in_html
   - tables
   - toc:
       permalink: true
+      permalink_title: Anchor link to this section
+      toc_depth: 3
+  # PyMdown Extensions
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: JoJo275
+      repo: website-building-workflow
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/JoJo275
+      name: GitHub on JoJo275
+  generator: false
 
 nav:
   - Home: index.md

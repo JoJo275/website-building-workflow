@@ -1,0 +1,54 @@
+/* ---------------------------------------------------------------------------
+   Extra styles layered on top of Material for MkDocs.
+   Keep this file small and additive — no theme overrides without a reason.
+   --------------------------------------------------------------------------- */
+
+/* Subtle lift on grid cards used on the home page */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards .card {
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    border-color 120ms ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards .card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--md-shadow-z2);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Tables: full width by default and a touch more breathing room */
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  font-weight: 600;
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* Inline code: gentler tint so it blends with body text */
+.md-typeset code {
+  border-radius: 0.25rem;
+  padding: 0.1em 0.35em;
+}
+
+/* Keys (kbd) rendered by pymdownx.keys */
+.md-typeset .keys kbd {
+  font-family: var(--md-code-font);
+  font-size: 0.85em;
+}
+
+/* Admonitions: tighten the title spacing a hair */
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 600;
+}
+
+/* Footer copyright: a little quieter */
+.md-copyright {
+  opacity: 0.8;
+}
